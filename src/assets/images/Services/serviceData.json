@@ -1,0 +1,78 @@
+{
+  "Tox & Neuromodulators": {
+    "id": 1,
+    "description": "Taylor Northcott Aesthetics has a variety of options of Neuromodulators, AKA Tox. At your appointment Taylor will assess your needs and determine the best Tox for you.\n*Tox takes a full 14 days for results. For first time clients touch ups are complimentary within treatment area between days 14-21 after your initial treatment.",
+    "types": [],
+    "image": "toxImg.jpg",
+    "FAQs": [
+      {
+        "question": "How many units do I need?",
+        "answer": "The number of units required will vary from person to person and is dependent on the area being treated, your lifestyle, and your natural metabolism."
+      },
+      {
+        "question": "When does it start to work & how long does it last?",
+        "answer": "Typically, Tox starts to work within 2-4 days and will peak on day 14. Treatments will typically last 3 months."
+      },
+      {
+        "question": "How often can I have neuromodulator injections?",
+        "answer": "You can dose up to every 90 days."
+      },
+      {
+        "question": "Which neuromodulator is right for me?",
+        "answer": "This will be discussed during your consultation. Tox choice varies from person to person. Furthermore, it is encouraged to switch brands occasionally to avoid Tox tolerance."
+      }
+    ]
+  },
+  "Fillers": {
+    "id": 2,
+    "description": "Taylor Northcott Aesthetics has a variety of options for Dermal Fillers including Hyaluronic Acid and Biostimulator products. At your appointment, Taylor will assess your needs and determine the best filler option for you. Common treatment areas include cheeks, chin, Jaw line, and lips.\n Lips include a dental block, reusable icepack, and Image Restoring Lip Enhancer for post-treatment.",
+    "types": [],
+    "image": "fillerImg.jpg",
+    "FAQs": [
+      {
+        "question": "How long does it last?",
+        "answer": "On average, fillers last 6-18 months and depends on the specific product used, the amount and the patient’s history and lifestyle."
+      },
+      {
+        "question": "What are the side effects?",
+        "answer": "Common side effects are bruising, swelling, redness, mild pain and tenderness. Avoid ibuprofen and alcohol at least 72 hours prior to procedure to avoid additional bruising."
+      }
+    ]
+  },
+  "Skin Tightening": {
+    "id": 3,
+    "description": "Taylor Northcott Aesthetics provides a variety of skin-tightening options. Common areas for skin tightening include: face/neck, chest, and hands.",
+    "types": [
+      {
+        "id": 1,
+        "name": "Microneedling",
+        "description": "Microneedling is a light resurfacing treatment that aids in the reduction of fine lines, minor scars, improves skin quality/texture as well as promotes skin tightening. The needles stimulate collagen production by causing minor injury to the skin. This minor injury stimulates the body’s collagen-producing cells to create new/strong collagen. Microneedling can be performed as an individual treatment; however, works best in a package of 3."
+      },
+      {
+        "id": 2,
+        "name": "Biostimulator",
+        "description": "A Biostimulator is a more invasive form of skin tightening. The collagen-producing stimulator is injected into your skin to encourage your body to produce new strong collagen! Hyperdilute RADIESSE promotes improved skin texture, tone, restores minor volume, and drastically softens fine lines and wrinkles."
+      },
+      {
+        "id": 3,
+        "name": "PRP/PRF add-on",
+        "description": "PRP/PRF is collected from a blood draw at the beginning of your appointment. The blood is then spun down to collect the serum or PRP/PRF. The serum contains grown factors which when injected or needled into the skin stimulates your body to produce its own natural collagen!"
+      }
+    ],
+    "image": "skinImg.jpg",
+    "FAQs": [
+      {
+        "question": "Microneedling with PRP: What is the exact process?",
+        "answer": "First, numbing cream is applied to the entire treatment area. We then use a small IV to draw your blood and place it in a centrifuge to separate the PRP and growth factors. This is what will be needled into your face."
+      },
+      {
+        "question": "What are the benefits?",
+        "answer": "The benefits include stimulating cell turnover, improving skin tone, reducing pore size, wrinkles, and fine lines. It can also be helpful to individuals with rosacea, visible acne scars and sun damage."
+      },
+      {
+        "question": "When do I see results for each procedure?",
+        "answer": "Results begin within the first week and will continue to improve up to 90 days after treatment. Patients can expect to see some redness, swelling and skin tightness. Typically redness resolves within 72 hours."
+      }
+    ]
+  }
+}

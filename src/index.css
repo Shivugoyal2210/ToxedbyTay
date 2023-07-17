@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.services img {
+  width: 33%;
+  margin-bottom: 3em;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 270px;
+}
+
+.services_content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hah {
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'myCursive';
+  src: url('./assets/fonts/customFont.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cursive {
+  font-family: myCursive;
+}
+
+.about_background {
+  position: relative;
+  background-image: url('./assets/images/about/background.jpg');
+  background-size: 100% 75%;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.about_front {
+  width: 60%;
+  position: relative;
+  top: 100px;
+  left: 22%;
+}
+.footer-email {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body_hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: max(18%, 120px);
+  padding-bottom: max(18%, 120px);
+  font-size: 1.1rem;
+}
+
+.body_hero > .cursive {
+  font-size: clamp(10rem, 12rem 15rem);
+}
+
+/* .content-grid {
+  max-inline-size: 1500px;
+  padding-inline: 2rem;
+  margin-inline: auto;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  display: grid;
+  position: relative;
+}
+
+@media (min-width: 960px) {
+  .content-grid {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+} */
+
+@media (min-width: 960px) {
+  .about-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about_background {
+    order: -1;
+  }
+  .about-text {
+    width: 40%;
+  }
+  .footer-small {
+    display: none;
+  }
+  .footer-big {
+    display: flex;
+  }
+  .service-container {
+    display: flex;
+  }
+  .service-container img {
+    width: 50%;
+    height: auto;
+    margin-left: 3rem;
+    margin-bottom: 10em;
+  }
+  .service-2 {
+    order: -1;
+  }
+}
+
+.footer-nav {
+  font: white;
+}
+
+.footer-nav > a {
+  font: rgb(255, 255, 255);
+}
+
+.footer-pics {
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 5em;
+}
+
+.services-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: max(10%, 120px);
+  padding-bottom: max(10%, 120px);
+  font-size: 1.1rem;
+}
+
+.services-hero > .cursive {
+  font-size: clamp(10rem, 12rem 15rem);
+}
+
+.services-nav {
+  background-color: #aa9a9a;
+}
+
+.item {
+  border-bottom: 1px solid black;
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+}
