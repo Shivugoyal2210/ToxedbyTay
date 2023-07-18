@@ -1,24 +1,102 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { skinImg, toxImg, fillerImg } from '../assets/images';
 import serviceJson from '../assets/images/Services/serviceData.json';
+import { ListItem } from '@mui/material';
+import { useRef } from 'react';
+
 const ServicesContent = () => {
   const faq1 = serviceJson['Tox & Neuromodulators'].FAQs;
   const faq2 = serviceJson['Fillers'].FAQs;
   const faq3 = serviceJson['Skin Tightening'].FAQs;
+  faq1.forEach((item) => (item.open = false));
+  faq2.forEach((item) => (item.open = false));
+  faq3.forEach((item) => (item.open = false));
+  const [faq_1, setfaq_1] = useState(faq1);
+  const [faq_2, setfaq_2] = useState(faq2);
+  const [faq_3, setfaq_3] = useState(faq3);
+
+  const handleFaq1 = (index) => {
+    setfaq_1((prev) =>
+      prev.map((item) =>
+        prev.indexOf(item) != index ? item : { ...item, open: !item.open }
+      )
+    );
+  };
+
+  const handleFaq2 = (index) => {
+    setfaq_2((prev) =>
+      prev.map((item) =>
+        prev.indexOf(item) != index ? item : { ...item, open: !item.open }
+      )
+    );
+  };
+
+  const handleFaq3 = (index) => {
+    setfaq_3((prev) =>
+      prev.map((item) =>
+        prev.indexOf(item) != index ? item : { ...item, open: !item.open }
+      )
+    );
+  };
+
+  const neuro = useRef(null);
+  const fillers = useRef(null);
+  const tightening = useRef(null);
+
+  const scrollToSection = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div>
-      <div className="services-nav flex w-screen justify-center content-center py-10 mb-8">
-        Tox & Neuromodulators | Fillers | Microneedling | Biostimulator |
-        PRP/PRF
+      <div className="services-nav w-screen min-h-[120px]">
+        <div className="hidden lg:flex justify-center content-center py-10  gap-10 mb-8 ">
+          <div
+            className="nav-item text-white text-lg cursor-pointer"
+            onClick={() => scrollToSection(neuro)}
+          >
+            Tox & Neuromodulators
+          </div>{' '}
+          <span className="text-white">|</span>
+          <div
+            className="nav-item text-white text-lg  cursor-pointer"
+            onClick={() => scrollToSection(fillers)}
+          >
+            Fillers
+          </div>
+          <span className="text-white">|</span>
+          <div
+            className="nav-item text-white text-lg cursor-pointer"
+            onClick={() => scrollToSection(tightening)}
+          >
+            Microneedling
+          </div>
+          <span className="text-white">|</span>
+          <div
+            className="nav-item text-white text-lg cursor-pointer"
+            onClick={() => scrollToSection(tightening)}
+          >
+            Biostimulator
+          </div>
+          <span className="text-white">|</span>
+          <div
+            className="nav-item text-white text-lg cursor-pointer"
+            onClick={() => scrollToSection(tightening)}
+          >
+            PRP/PRF
+          </div>
+        </div>
       </div>
-      <div className="service-container">
+      <div className="service-container mt-5" ref={neuro}>
         <img
           src={toxImg}
           alt="fillerImg"
           className="w-full aspect-video object-cover"
         />
-        <div className="w-full">
-          <div className="services-nav w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
+        <div className="w-full mt-10">
+          <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5">
             <h1 className="tracking-widest mb-7">NEUROMODULATORS</h1>
             <p className="mb-5">
               Taylor Northcott Aesthetics has a variety of options of
@@ -35,27 +113,37 @@ const ServicesContent = () => {
             Book Now
           </div>
           <div className="accordion w-[90%] mx-auto">
-            {faq1.map((item, i) => (
-              <div className="item">
+            {faq_1.map((item, i) => (
+              <div
+                className="item cursor-pointer"
+                key={i}
+                onClick={() => handleFaq1(i)}
+              >
                 <div className="title">
                   <h2>
                     {item.question} <span>+</span>
                   </h2>
                 </div>
-                <div className="content">{item.answer}</div>
+                <div
+                  className={
+                    item.open ? 'fade-in-text content block mt-5' : 'hidden'
+                  }
+                >
+                  {item.answer}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="service-container">
+      <div className="service-container" ref={fillers}>
         <img
           src={fillerImg}
           alt="fillerImg"
           className="w-full aspect-video object-cover"
         />
         <div className="w-full service-2">
-          <div className="services-nav w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
+          <div className="services-text-mid w-[90%] mt-10 text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
             <h1 className="tracking-widest mb-7">FILLERS</h1>
             <p className="mb-5">
               Taylor Northcott Aesthetics has a variety of options for Dermal
@@ -73,27 +161,35 @@ const ServicesContent = () => {
             Book Now
           </div>
           <div className="accordion w-[90%] mx-auto">
-            {faq2.map((item, i) => (
-              <div className="item">
+            {faq_2.map((item, i) => (
+              <div
+                className="item cursor-pointer"
+                key={i}
+                onClick={() => handleFaq2(i)}
+              >
                 <div className="title">
                   <h2>
                     {item.question} <span>+</span>
                   </h2>
                 </div>
-                <div className="content">{item.answer}</div>
+                <div
+                  className={item.open ? 'fade-in-text block mt-5' : 'hidden'}
+                >
+                  {item.answer}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="service-container">
+      <div className="service-container" ref={tightening}>
         <img
           src={skinImg}
           alt="fillerImg"
           className="w-full aspect-video object-cover"
         />
         <div className="w-full">
-          <div className="services-nav w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
+          <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
             <h1 className="tracking-widest mb-7">SKIN TIGHTENING</h1>
             <p className="mb-5">
               Taylor Northcott Aesthetics provides a variety of skin-tightening
@@ -131,14 +227,22 @@ const ServicesContent = () => {
             Book Now
           </div>
           <div className="accordion w-[90%] mx-auto">
-            {faq3.map((item, i) => (
-              <div className="item">
+            {faq_3.map((item, i) => (
+              <div
+                className="item cursor-pointer"
+                key={i}
+                onClick={() => handleFaq3(i)}
+              >
                 <div className="title">
                   <h2>
                     {item.question} <span>+</span>
                   </h2>
                 </div>
-                <div className="content">{item.answer}</div>
+                <div
+                  className={item.open ? 'fade-in-text block mt-5' : 'hidden'}
+                >
+                  {item.answer}
+                </div>
               </div>
             ))}
           </div>

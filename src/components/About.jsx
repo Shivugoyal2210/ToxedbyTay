@@ -6,7 +6,7 @@ const About = () => {
     <div className="w-full h-auto overflow-hidden">
       <div className="about-container p-40 px-14">
         <div className="about-text">
-          <div className="cursive text-8xl">
+          <div className="cursive break-words text-8xl">
             Registered Nurse.
             <br /> Licensed Aesthetician.
           </div>

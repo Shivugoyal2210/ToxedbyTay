@@ -24,23 +24,23 @@ const Navbar = () => {
 
   return (
     <div className="w-screen h-20 bg-opacity-0 z-10 absolute">
-      <nav className="flex items-center px-2 py-8 z-10">
+      <nav className="flex items-center justify-between px-2 py-8 z-10">
         <div className="mr-auto px-10 ">
           <img
             onClick={() => navigate(`/`)}
-            className="logo_navbar h-12 object-contain cursor-pointer"
+            className="logo-navbar cursor-pointer"
             src={logo}
           />
         </div>
         <div className="block lg:hidden mr-5 z-50" onClick={handleNav}>
           {isMobileNav ? (
-            <MenuIcon style={{ color: '#545454' }} />
-          ) : (
             <CloseIcon style={{ color: '#545454' }} />
+          ) : (
+            <MenuIcon style={{ color: '#545454' }} />
           )}
         </div>
-        <div className="hidden lg:flex space-x-20 text-[19px] mr-10">
-          <ul className="flex gap-10">
+        <div className="hidden lg:flex text-[19px] mr-10">
+          <ul className="flex gap-28">
             <li>
               <NavLink
                 className="cursor-pointer"
