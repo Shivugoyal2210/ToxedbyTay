@@ -153,3 +153,12 @@ body {
   padding-bottom: 2em;
   margin-bottom: 1em;
 }
+
+.mobile-nav {
+  font-size: 1.3rem;
+  position: fixed;
+  inset: 0 0 0 30%;
+  padding: min(20vh, 10rem) 2em;
+  background: hsl(0 0% 95% / 40%);
+  backdrop-filter: blur(0.6rem);
+}
