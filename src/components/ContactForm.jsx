@@ -1,10 +1,6 @@
 import React from 'react';
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 import { Formik } from 'formik';
-import {
-  TextField,
-  useMediaQuery,
-} from '@mui/material';
+import { TextField, useMediaQuery } from '@mui/material';
 import * as yup from 'yup';
 import Faq from './Faq';
 
