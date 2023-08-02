@@ -5,6 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
+import auth from '../../firebaseConfig';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
 
 const Navbar = () => {
   const activeStyles = {
@@ -14,12 +17,24 @@ const Navbar = () => {
 
   const [isMobileNav, setisMobileNav] = useState(false);
 
+  const [user, loading] = useAuthState(auth);
+  console.log(user);
   const handleNav = () => {
     if (isMobileNav) {
       setisMobileNav(false);
     } else {
       setisMobileNav(true);
     }
+  };
+
+  const handleSignout = () => {
+    signOut(auth)
+      .then(() => {
+        console.log('out');
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -42,6 +57,22 @@ const Navbar = () => {
         <div className="hidden lg:flex text-[19px] mr-10">
           <ul className="flex gap-28">
             <li>
+              {!user && (
+                <NavLink
+                  className="cursor-pointer"
+                  to="/login"
+                  style={({ isActive }) => (isActive ? activeStyles : null)}
+                >
+                  Login
+                </NavLink>
+              )}
+              {user && (
+                <NavLink className="cursor-pointer" onClick={handleSignout}>
+                  Logout
+                </NavLink>
+              )}
+            </li>
+            <li>
               <NavLink
                 className="cursor-pointer"
                 to="/services"
@@ -62,7 +93,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 className="cursor-pointer py-3 px-3 text-white bg-black"
-                to="/"
+                to="/book-now"
                 style={({ isActive }) => (isActive ? activeStyles : null)}
               >
                 Book Now

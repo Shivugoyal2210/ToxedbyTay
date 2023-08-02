@@ -2,12 +2,8 @@ import React from 'react';
 import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 import { Formik } from 'formik';
 import {
-  Box,
-  Button,
   TextField,
   useMediaQuery,
-  Typography,
-  useTheme,
 } from '@mui/material';
 import * as yup from 'yup';
 import Faq from './Faq';
@@ -34,7 +30,7 @@ const ContactForm = () => {
   return (
     <>
       <div>
-        <div className="w-screen px-10 pt-[20rem] lg:flex justify-between">
+        <div className="w-screen px-10 pt-[20rem] lg:flex justify-evenly">
           <div className="lg:w-[40%]">
             <a
               className="underline"
@@ -126,9 +122,17 @@ const ContactForm = () => {
               )}
             </Formik>
           </div>
-          <div className="lg:w-[45%]">Map to display</div>
+          <div className="lg:w-[45%]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.15725586416!2d-112.06896289023793!3d33.62716433994736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b6e1210ec26ef%3A0xb1270d207c582acf!2s15440%20N%207th%20St%20%2318%2C%20Phoenix%2C%20AZ%2085022%2C%20USA!5e0!3m2!1sen!2sin!4v1689880173466!5m2!1sen!2sin"
+              allowFullScreen=""
+              className="w-full h-[90%] min-h-[300px]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <div className="about-me my-[5rem]">
+        <div className="about-me my-[5rem] bg-pink-100">
           <div className={big ? 'w-[40%] ml-[52%]' : 'w-[80%] mx-auto'}>
             <p className="cursive text-8xl mb-10">hi, I'm Taylor…</p>
             <p className="mb-5">
