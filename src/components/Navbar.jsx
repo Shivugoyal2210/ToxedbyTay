@@ -1,24 +1,23 @@
-import React from 'react';
-import { mainLanding, logo } from '../assets/images';
-import { Link, NavLink } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import { useState } from 'react';
-import auth from '../../firebaseConfig';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { signOut } from 'firebase/auth';
+import React from "react";
+import { mainLanding, logo } from "../assets/images";
+import { Link, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { useState } from "react";
+import auth from "../../firebaseConfig";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { signOut } from "firebase/auth";
 
 const Navbar = () => {
   const activeStyles = {
-    textDecoration: 'underline',
+    textDecoration: "underline",
   };
   const navigate = useNavigate();
 
   const [isMobileNav, setisMobileNav] = useState(false);
 
   const [user, loading] = useAuthState(auth);
-  console.log(user);
   const handleNav = () => {
     if (isMobileNav) {
       setisMobileNav(false);
@@ -30,7 +29,7 @@ const Navbar = () => {
   const handleSignout = () => {
     signOut(auth)
       .then(() => {
-        console.log('out');
+        console.log("out");
       })
       .catch((error) => {
         console.log(error);
@@ -49,15 +48,15 @@ const Navbar = () => {
         </div>
         <div className="block lg:hidden mr-5 z-50" onClick={handleNav}>
           {isMobileNav ? (
-            <CloseIcon style={{ color: '#545454' }} />
+            <CloseIcon style={{ color: "#545454" }} />
           ) : (
-            <MenuIcon style={{ color: '#545454' }} />
+            <MenuIcon style={{ color: "#545454" }} />
           )}
         </div>
         <div className="hidden lg:flex text-[19px] mr-10">
           <ul className="flex gap-28">
-            <li>
-              {!user && (
+            {/* <li>
+               {!user && (
                 <NavLink
                   className="cursor-pointer"
                   to="/login"
@@ -65,12 +64,21 @@ const Navbar = () => {
                 >
                   Login
                 </NavLink>
-              )}
-              {user && (
+              )} */}
+            {/* {user && (
                 <NavLink className="cursor-pointer" onClick={handleSignout}>
                   Logout
                 </NavLink>
-              )}
+              )} 
+            </li> */}
+            <li>
+              <a
+                className="cursor-pointer"
+                href="https://skinbetter.pro/toxedbytay"
+                target="_blank"
+              >
+                Shop
+              </a>
             </li>
             <li>
               <NavLink
@@ -91,13 +99,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink
+              <a
                 className="cursor-pointer py-3 px-3 text-white bg-black"
-                to="/book-now"
-                style={({ isActive }) => (isActive ? activeStyles : null)}
+                href="https://toxedbytay.glossgenius.com/"
+                target="_blank"
               >
                 Book Now
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>
@@ -105,10 +113,19 @@ const Navbar = () => {
       <ul
         className={
           isMobileNav
-            ? 'mobile-nav lg:hidden flex flex-col gap-10 ease-out duration-200'
-            : 'fixed left-[100%]'
+            ? "mobile-nav lg:hidden flex flex-col gap-10 ease-out duration-200"
+            : "fixed left-[100%]"
         }
       >
+        <li>
+          <a
+            className="cursor-pointer"
+            href="https://skinbetter.pro/toxedbytay"
+            target="_blank"
+          >
+            Shop
+          </a>
+        </li>
         <li>
           <NavLink
             className="cursor-pointer"

@@ -1,5 +1,5 @@
-import React from 'react';
-import { mainImg } from '../assets/images';
+import React from "react";
+import { mainImg } from "../assets/images";
 const ServicesHero = () => {
   return (
     <div
@@ -8,7 +8,7 @@ const ServicesHero = () => {
         backgroundImage: `linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url(${mainImg})`,
       }}
     >
-      <div className="hero_text flex flex-col gap-5 mx-auto break-words px-8">
+      <div className="hero_text flex flex-col gap-5 mx-auto break-words px-8 fade-in">
         <div className="cursive font-extralight text-8xl opacity-80  text-center ">
           A refreshed version of you
         </div>
@@ -16,9 +16,9 @@ const ServicesHero = () => {
           Our med spa services leave you feeling rejuvenated and excited about
           the results.
         </div>
-        <span className="text-center mx-auto cursor-pointer py-7 px-20 text-white bg-black text-lgmax-w-xs">
+        <a className="text-center mx-auto cursor-pointer py-7 px-20 text-white bg-black text-lgmax-w-xs fade-in">
           Book Now
-        </span>
+        </a>
       </div>
     </div>
   );

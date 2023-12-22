@@ -1,13 +1,35 @@
-import React, { useState } from 'react';
-import { skinImg, toxImg, fillerImg } from '../assets/images';
-import serviceJson from '../assets/images/Services/serviceData.json';
-import { ListItem } from '@mui/material';
-import { useRef } from 'react';
+import React, { useState, useEffect } from "react";
+import { skinImg, toxImg, fillerImg } from "../assets/images";
+import serviceJson from "../assets/images/Services/serviceData.json";
+import { ListItem } from "@mui/material";
+import { useRef } from "react";
 
 const ServicesContent = () => {
-  const faq1 = serviceJson['Tox & Neuromodulators'].FAQs;
-  const faq2 = serviceJson['Fillers'].FAQs;
-  const faq3 = serviceJson['Skin Tightening'].FAQs;
+  useEffect(() => {
+    const config = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, config);
+
+    const hiddenElements = document.querySelectorAll(".fade-in");
+    hiddenElements.forEach((element) => observer.observe(element));
+
+    // Clean up the observer on component unmount
+    return () => {
+      hiddenElements.forEach((element) => observer.unobserve(element));
+    };
+  }, []);
+  const faq1 = serviceJson["Tox & Neuromodulators"].FAQs;
+  const faq2 = serviceJson["Fillers"].FAQs;
+  const faq3 = serviceJson["Skin Tightening"].FAQs;
   faq1.forEach((item) => (item.open = false));
   faq2.forEach((item) => (item.open = false));
   faq3.forEach((item) => (item.open = false));
@@ -46,7 +68,7 @@ const ServicesContent = () => {
   const scrollToSection = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
   return (
@@ -58,7 +80,7 @@ const ServicesContent = () => {
             onClick={() => scrollToSection(neuro)}
           >
             Tox & Neuromodulators
-          </div>{' '}
+          </div>{" "}
           <span className="text-white">|</span>
           <div
             className="nav-item text-white text-lg  cursor-pointer"
@@ -89,13 +111,13 @@ const ServicesContent = () => {
           </div>
         </div>
       </div>
-      <div className="service-container mt-5" ref={neuro}>
+      <div className="service-container mt-5" ref={neuro} id="neuro">
         <img
           src={toxImg}
           alt="fillerImg"
           className="w-full aspect-video object-cover"
         />
-        <div className="w-full mt-10">
+        <div className="w-full mt-10 fade-in">
           <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5">
             <h1 className="tracking-widest mb-7">NEUROMODULATORS</h1>
             <p className="mb-5">
@@ -120,13 +142,13 @@ const ServicesContent = () => {
                 onClick={() => handleFaq1(i)}
               >
                 <div className="title">
-                  <h2>
-                    {item.question} <span>+</span>
+                  <h2 className="flex justify-between">
+                    {item.question} <span>{item.open ? "-" : "+"}</span>
                   </h2>
                 </div>
                 <div
                   className={
-                    item.open ? 'fade-in-text content block mt-5' : 'hidden'
+                    item.open ? "fade-in-text content block mt-5" : "hidden"
                   }
                 >
                   {item.answer}
@@ -136,13 +158,13 @@ const ServicesContent = () => {
           </div>
         </div>
       </div>
-      <div className="service-container" ref={fillers}>
+      <div className="service-container" ref={fillers} id="fillers">
         <img
           src={fillerImg}
           alt="fillerImg"
           className="w-full aspect-video object-cover"
         />
-        <div className="w-full service-2">
+        <div className="w-full service-2 fade-in">
           <div className="services-text-mid w-[90%] mt-10 text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
             <h1 className="tracking-widest mb-7">FILLERS</h1>
             <p className="mb-5">
@@ -168,12 +190,12 @@ const ServicesContent = () => {
                 onClick={() => handleFaq2(i)}
               >
                 <div className="title">
-                  <h2>
-                    {item.question} <span>+</span>
+                  <h2 className="flex justify-between">
+                    {item.question} <span>{item.open ? "-" : "+"}</span>
                   </h2>
                 </div>
                 <div
-                  className={item.open ? 'fade-in-text block mt-5' : 'hidden'}
+                  className={item.open ? "fade-in-text block mt-5" : "hidden"}
                 >
                   {item.answer}
                 </div>
@@ -182,13 +204,13 @@ const ServicesContent = () => {
           </div>
         </div>
       </div>
-      <div className="service-container" ref={tightening}>
+      <div className="service-container" ref={tightening} id="tightening">
         <img
           src={skinImg}
           alt="fillerImg"
           className="w-full aspect-video object-cover"
         />
-        <div className="w-full">
+        <div className="w-full fade-in">
           <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
             <h1 className="tracking-widest mb-7">SKIN TIGHTENING</h1>
             <p className="mb-5">
@@ -234,12 +256,12 @@ const ServicesContent = () => {
                 onClick={() => handleFaq3(i)}
               >
                 <div className="title">
-                  <h2>
-                    {item.question} <span>+</span>
+                  <h2 className="flex justify-between">
+                    {item.question} <span>{item.open ? "-" : "+"}</span>
                   </h2>
                 </div>
                 <div
-                  className={item.open ? 'fade-in-text block mt-5' : 'hidden'}
+                  className={item.open ? "fade-in-text block mt-5" : "hidden"}
                 >
                   {item.answer}
                 </div>

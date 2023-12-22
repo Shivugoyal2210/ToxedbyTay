@@ -1,10 +1,10 @@
-import React from 'react';
-import serviceJson from '../assets/images/Services/serviceData.json';
-import { useState } from 'react';
+import React from "react";
+import serviceJson from "../assets/images/Services/serviceData.json";
+import { useState } from "react";
 const Faq = () => {
-  const faq1 = serviceJson['Tox & Neuromodulators'].FAQs;
-  const faq2 = serviceJson['Fillers'].FAQs;
-  const faq3 = serviceJson['Skin Tightening'].FAQs;
+  const faq1 = serviceJson["Tox & Neuromodulators"].FAQs;
+  const faq2 = serviceJson["Fillers"].FAQs;
+  const faq3 = serviceJson["Skin Tightening"].FAQs;
   faq1.forEach((item) => (item.open = false));
   faq2.forEach((item) => (item.open = false));
   faq3.forEach((item) => (item.open = false));
@@ -36,7 +36,7 @@ const Faq = () => {
     );
   };
   return (
-    <div className="my-10">
+    <div className="my-10" id="faq">
       <p className="cursive text-7xl text-center mb-10 ">
         Frequently Asked Questions
       </p>
@@ -49,13 +49,13 @@ const Faq = () => {
             onClick={() => handleFaq1(i)}
           >
             <div className="title">
-              <h2>
-                {item.question} <span>+</span>
+              <h2 className="flex justify-between">
+                {item.question} <span>{item.open ? "-" : "+"}</span>
               </h2>
             </div>
             <div
               className={
-                item.open ? 'fade-in-text content block mt-5' : 'hidden'
+                item.open ? "fade-in-text content block mt-5" : "hidden"
               }
             >
               {item.answer}
@@ -75,11 +75,11 @@ const Faq = () => {
             onClick={() => handleFaq2(i)}
           >
             <div className="title">
-              <h2>
-                {item.question} <span>+</span>
+              <h2 className="flex justify-between">
+                {item.question} <span>{item.open ? "-" : "+"}</span>
               </h2>
             </div>
-            <div className={item.open ? 'fade-in-text block mt-5' : 'hidden'}>
+            <div className={item.open ? "fade-in-text block mt-5" : "hidden"}>
               {item.answer}
             </div>
           </div>
@@ -97,11 +97,11 @@ const Faq = () => {
             onClick={() => handleFaq3(i)}
           >
             <div className="title">
-              <h2>
-                {item.question} <span>+</span>
+              <h2 className="flex justify-between">
+                {item.question} <span>{item.open ? "-" : "+"}</span>
               </h2>
             </div>
-            <div className={item.open ? 'fade-in-text block mt-5' : 'hidden'}>
+            <div className={item.open ? "fade-in-text block mt-5" : "hidden"}>
               {item.answer}
             </div>
           </div>

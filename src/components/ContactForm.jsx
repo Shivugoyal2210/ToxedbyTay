@@ -1,23 +1,23 @@
-import React from 'react';
-import { Formik } from 'formik';
-import { TextField, useMediaQuery } from '@mui/material';
-import * as yup from 'yup';
-import Faq from './Faq';
+import React from "react";
+import { Formik } from "formik";
+import { TextField, useMediaQuery } from "@mui/material";
+import * as yup from "yup";
+import Faq from "./Faq";
 
 const ContactForm = () => {
-  const big = useMediaQuery('(min-width:960px)');
+  const big = useMediaQuery("(min-width:960px)");
   const messageSchema = yup.object().shape({
-    firstName: yup.string().required('required'),
+    firstName: yup.string().required("required"),
     lastName: yup.string(),
-    email: yup.string().email('invalid email').required('required'),
-    message: yup.string().required('required'),
+    email: yup.string().email("invalid email").required("required"),
+    message: yup.string().required("required"),
   });
 
   const initialValuesMessage = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
   };
 
   const handleFormSubmit = () => {
@@ -32,7 +32,7 @@ const ContactForm = () => {
               className="underline"
               href="https://www.google.com/maps/place/15440+N+7th+St+%2318,+Phoenix,+AZ+85022/@33.6271599,-112.0685713,17z/data=!3m1!4b1!4m5!3m4!1s0x872b6e1210ec26ef:0xb1270d207c582acf!8m2!3d33.6271599!4d-112.0663826"
             >
-              15440 N 7th Street, Suite 18, Phoenix, AZ 85022
+              4117 N 17th St, Phoenix, AZ 85016
             </a>
             <br />
             <a className="underline" href="tel:+14806489401">
@@ -105,7 +105,7 @@ const ContactForm = () => {
                     helperText={touched.message && errors.message}
                     inputProps={{
                       style: {
-                        height: '5rem',
+                        height: "5rem",
                       },
                     }}
                   />
@@ -120,7 +120,7 @@ const ContactForm = () => {
           </div>
           <div className="lg:w-[45%]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.15725586416!2d-112.06896289023793!3d33.62716433994736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b6e1210ec26ef%3A0xb1270d207c582acf!2s15440%20N%207th%20St%20%2318%2C%20Phoenix%2C%20AZ%2085022%2C%20USA!5e0!3m2!1sen!2sin!4v1689880173466!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.229034400045!2d-112.04783662474559!3d33.49541777337181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0d7e5b0b3f41%3A0x801c3a96e6502541!2s4117%20N%2017th%20St%2C%20Phoenix%2C%20AZ%2085016!5e0!3m2!1sen!2sus!4v1703287310931!5m2!1sen!2sus"
               allowFullScreen=""
               className="w-full h-[90%] min-h-[300px]"
               loading="lazy"
@@ -129,10 +129,10 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="about-me my-[5rem] bg-pink-100">
-          <div className={big ? 'w-[40%] ml-[52%]' : 'w-[80%] mx-auto'}>
+          <div className={big ? "w-[40%] ml-[52%]" : "w-[80%] mx-auto"}>
             <p className="cursive text-8xl mb-10">hi, I'm Taylor…</p>
             <p className="mb-5">
-              I am a Registered Nurse and Licensed Aesthetician.{' '}
+              I am a Registered Nurse and Licensed Aesthetician.{" "}
             </p>
             <p className="mb-5">
               I started my nursing career in the Intensive Care Unit (ICU). I

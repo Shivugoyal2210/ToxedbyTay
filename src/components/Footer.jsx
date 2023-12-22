@@ -1,15 +1,17 @@
-import React from 'react';
+import React from "react";
 import {
   emailPromo,
   hashLogo,
   logoWhite,
   footer1,
   footer2,
-} from '../assets/images';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+} from "../assets/images";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="w-screen h-auto">
@@ -17,21 +19,22 @@ const Footer = () => {
           className="flex flex-col gap-9 align-center footer-email text-center py-40 px-5"
           style={{ backgroundImage: `url(${emailPromo})` }}
         >
-          <div className="cursive text-8xl">Beautify your inbox.</div>
-          <div className="text-lg">
-            Enter your email address below to receive exclusive{' '}
-            <span className="underline">#toxedbytay</span> discounts and more!
+          <div className="cursive text-8xl fade-in">Beautify your inbox.</div>
+          <div className="text-lg fade-in">
+            Enter your email address below to receive exclusive{" "}
+            <span className="underline fade-in">#toxedbytay</span> discounts and
+            more!
           </div>
           <div>
             <input
               type="text"
               placeholder="Email Address"
-              className="py-7 px-10 mr-5 text-lg"
+              className="py-7 px-10 mr-5 text-lg fade-in"
             />
             <input
               type="button"
               value="Sign up"
-              className="bg-black text-white py-7 px-10"
+              className="bg-black text-white py-7 px-10 fade-in"
             />
           </div>
           <div className="text-sm">We respect your privacy.</div>
@@ -53,18 +56,33 @@ const Footer = () => {
         </div>
         <div className="footer-small footer-nav flex flex-col gap-3 ">
           <img src={logoWhite} alt="logo" className="w-[60%] h-auto mx-auto" />
-          <a href="#" className="text-white underline mx-auto">
+          <a
+            onClick={() => navigate(`/`)}
+            className="text-white underline mx-auto"
+          >
             Home
           </a>
-          <a href="#" className="text-white underline mx-auto">
+          <NavLink
+            to="/services"
+            className="text-white underline mx-auto"
+            reloadDocument
+          >
             Services
-          </a>
-          <a href="#" className="text-white underline mx-auto">
+          </NavLink>
+          <NavLink
+            to="/contact"
+            reloadDocument
+            className="text-white underline mx-auto"
+          >
             Contact
-          </a>
-          <a href="#" className="text-white underline mx-auto">
+          </NavLink>
+          <NavLink
+            to="/contact"
+            reloadDocument
+            className="text-white underline mx-auto"
+          >
             FAQ
-          </a>
+          </NavLink>
           <input
             type="button"
             value="Book Now"
@@ -75,7 +93,7 @@ const Footer = () => {
             <MailOutlineIcon />
           </p>
           <a href="#" className="text-white underline mx-auto">
-            15440 N. 7th St Suite 18, Phoenix, AZ 85022
+            4117 N. 17th St, Phoenix, AZ 85016
           </a>
           <a href="#" className="text-white underline mx-auto">
             (480)-648-9401
@@ -84,16 +102,19 @@ const Footer = () => {
         <div className="footer-big hidden">
           <div className="w-[80%] max-w-6xl flex justify-between mx-auto py-20">
             <div className="flex flex-col gap-5 justify-center">
-              <a href="#" className="text-white underline mx-auto text-lg">
+              <a
+                onClick={() => navigate(`/`)}
+                className="text-white underline mx-auto text-lg hover:cursor-pointer"
+              >
                 Home
               </a>
-              <a href="#" className="text-white underline mx-auto">
+              <a href="/services" className="text-white underline mx-auto">
                 Services
               </a>
-              <a href="#" className="text-white underline mx-auto">
+              <a href="/contact" className="text-white underline mx-auto">
                 Contact
               </a>
-              <a href="#" className="text-white underline mx-auto">
+              <a href="/contact#faq" className="text-white underline mx-auto">
                 FAQ
               </a>
             </div>
@@ -107,7 +128,7 @@ const Footer = () => {
                 href="#"
                 className="text-white underline mx-auto justify-center"
               >
-                15440 N. 7th St Suite 18, Phoenix, AZ 85022
+                4117 N. 17th St, Phoenix, AZ 85016
               </a>
               <a href="#" className="text-white underline mx-auto">
                 (480)-648-9401
@@ -120,8 +141,8 @@ const Footer = () => {
                 className="bg-neutral-300 text-black py-7 text-lg px-14 mx-auto"
               />
               <p className="mx-auto">
-                <InstagramIcon style={{ color: 'white', marginRight: 5 }} />
-                <MailOutlineIcon style={{ color: 'white' }} />
+                <InstagramIcon style={{ color: "white", marginRight: 5 }} />
+                <MailOutlineIcon style={{ color: "white" }} />
               </p>
             </div>
           </div>
