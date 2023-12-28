@@ -38,7 +38,7 @@ const ContactForm = () => {
             <a className="underline" href="tel:+14806489401">
               (480)-648-9401
             </a>
-            <p className="mt-8">
+            <p className="mt-8 mb-5">
               <span className="font-bold">Questions?</span> Send us a message!
             </p>
             <Formik
@@ -128,7 +128,7 @@ const ContactForm = () => {
             ></iframe>
           </div>
         </div>
-        <div className="about-me my-[5rem] bg-pink-100">
+        <div className="about-me my-[5rem] bg-pink-100 py-10">
           <div className={big ? "w-[40%] ml-[52%]" : "w-[80%] mx-auto"}>
             <p className="cursive text-8xl mb-10">hi, I'm Taylor…</p>
             <p className="mb-5">
@@ -161,12 +161,19 @@ const ContactForm = () => {
             <p className="font-bold">
               Medical Director/Primary Injector Trainor
             </p>
-            <p>Erin Jones, FNP/ PMHNP</p>
-            <input
+            <p className="mb-10">Erin Jones, FNP/ PMHNP</p>
+            <a
+              className="bg-black text-white mt-[8rem] py-6 px-12 w-1/2 cursor-pointer "
+              href="https://toxedbytay.glossgenius.com/"
+              target="_blank"
+            >
+              Book Now
+            </a>
+            {/* <input
               type="button"
               value="Book Now"
               className="bg-black text-white mt-[8rem] py-6 px-5 w-1/2 cursor-pointer "
-            />
+            /> */}
           </div>
         </div>
         <Faq />

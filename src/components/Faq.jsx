@@ -50,7 +50,30 @@ const Faq = () => {
           >
             <div className="title">
               <h2 className="flex justify-between">
-                {item.question} <span>{item.open ? "-" : "+"}</span>
+                {item.question}{" "}
+                <svg
+                  className={item.open ? "minus" : "plus"}
+                  viewBox="0 0 100 100"
+                  width="15"
+                >
+                  <rect
+                    className="horizontal"
+                    width="80"
+                    height="10"
+                    x="10"
+                    y="33"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    className="vertical"
+                    width="10"
+                    height="80"
+                    x="45"
+                    y="0"
+                    rx="5"
+                  ></rect>
+                </svg>
+                {/* <span>{item.open ? "-" : "+"}</span> */}
               </h2>
             </div>
             <div
@@ -76,7 +99,29 @@ const Faq = () => {
           >
             <div className="title">
               <h2 className="flex justify-between">
-                {item.question} <span>{item.open ? "-" : "+"}</span>
+                {item.question}{" "}
+                <svg
+                  className={item.open ? "minus" : "plus"}
+                  viewBox="0 0 100 100"
+                  width="15"
+                >
+                  <rect
+                    className="horizontal"
+                    width="80"
+                    height="10"
+                    x="10"
+                    y="33"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    className="vertical"
+                    width="10"
+                    height="80"
+                    x="45"
+                    y="0"
+                    rx="5"
+                  ></rect>
+                </svg>
               </h2>
             </div>
             <div className={item.open ? "fade-in-text block mt-5" : "hidden"}>
@@ -98,7 +143,29 @@ const Faq = () => {
           >
             <div className="title">
               <h2 className="flex justify-between">
-                {item.question} <span>{item.open ? "-" : "+"}</span>
+                {item.question}
+                <svg
+                  className={item.open ? "minus" : "plus"}
+                  viewBox="0 0 100 100"
+                  width="15"
+                >
+                  <rect
+                    className="horizontal"
+                    width="80"
+                    height="10"
+                    x="10"
+                    y="33"
+                    rx="5"
+                  ></rect>
+                  <rect
+                    className="vertical"
+                    width="10"
+                    height="80"
+                    x="45"
+                    y="0"
+                    rx="5"
+                  ></rect>
+                </svg>
               </h2>
             </div>
             <div className={item.open ? "fade-in-text block mt-5" : "hidden"}>

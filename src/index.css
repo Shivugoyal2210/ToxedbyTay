@@ -200,7 +200,7 @@ body {
 }
 
 .fade-in-text {
-  animation: fadeIn 0.6s;
+  animation: fadeIn 1s;
 }
 
 .fade-in {
@@ -218,4 +218,19 @@ body {
   100% {
     opacity: 1;
   }
+}
+.plus .vertical {
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.minus .vertical {
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.minus .vertical {
+  transform: rotate(90deg);
+  y: 10;
+  x: 35;
 }

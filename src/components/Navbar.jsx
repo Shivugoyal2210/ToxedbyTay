@@ -38,12 +38,16 @@ const Navbar = () => {
 
   return (
     <div className="w-screen h-20 bg-opacity-0 z-10 absolute">
-      <nav className="flex items-center justify-between px-2 py-8 z-10">
+      <nav
+        className="flex items-center justify-between px-2 py-8 z-10"
+        id="navbar"
+      >
         <div className="mr-auto px-10 ">
           <img
             onClick={() => navigate(`/`)}
             className="logo-navbar cursor-pointer"
             src={logo}
+            alt="logo"
           />
         </div>
         <div className="block lg:hidden mr-5 z-50" onClick={handleNav}>
@@ -151,7 +155,8 @@ const Navbar = () => {
         <li>
           <NavLink
             className="cursor-pointer"
-            to="/"
+            to="https://toxedbytay.glossgenius.com/"
+            target="_blank"
             onClick={() => {
               setisMobileNav(false);
             }}

@@ -51,9 +51,13 @@ const Services = () => {
             alt="skinTightening"
           />
         </div>
-        <span className="hah flex justify-center max-w-xs cursor-pointer my-5 py-8 px-12 text-white bg-black text-[22px] fade-in">
+        <a
+          className="hah flex justify-center max-w-xs cursor-pointer my-5 py-8 px-12 text-white bg-black text-[22px] fade-in"
+          href="https://toxedbytay.glossgenius.com/"
+          target="_blank"
+        >
           Book Now
-        </span>
+        </a>
       </div>
     </div>
   );

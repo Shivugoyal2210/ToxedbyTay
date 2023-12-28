@@ -8,10 +8,11 @@ import {
 } from "../assets/images";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, redirect, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
+
   return (
     <div>
       <div className="w-screen h-auto">
@@ -29,7 +30,7 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Email Address"
-              className="py-7 px-10 mr-5 text-lg fade-in"
+              className="py-7 px-10 mr-5 text-lg mb-5 fade-in"
             />
             <input
               type="button"
@@ -56,12 +57,20 @@ const Footer = () => {
         </div>
         <div className="footer-small footer-nav flex flex-col gap-3 ">
           <img src={logoWhite} alt="logo" className="w-[60%] h-auto mx-auto" />
-          <a
-            onClick={() => navigate(`/`)}
+          <NavLink
+            to="/"
             className="text-white underline mx-auto"
+            reloadDocument
           >
             Home
-          </a>
+          </NavLink>
+          <NavLink
+            className="text-white underline mx-auto"
+            href="https://skinbetter.pro/toxedbytay"
+            target="_blank"
+          >
+            Shop
+          </NavLink>
           <NavLink
             to="/services"
             className="text-white underline mx-auto"
@@ -102,11 +111,19 @@ const Footer = () => {
         <div className="footer-big hidden">
           <div className="w-[80%] max-w-6xl flex justify-between mx-auto py-20">
             <div className="flex flex-col gap-5 justify-center">
-              <a
-                onClick={() => navigate(`/`)}
+              <NavLink
+                t0="/"
                 className="text-white underline mx-auto text-lg hover:cursor-pointer"
+                reloadDocument
               >
                 Home
+              </NavLink>
+              <a
+                className="cursor-pointer"
+                href="https://skinbetter.pro/toxedbytay"
+                target="_blank"
+              >
+                Shop
               </a>
               <a href="/services" className="text-white underline mx-auto">
                 Services

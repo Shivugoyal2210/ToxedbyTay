@@ -16,7 +16,11 @@ const ServicesHero = () => {
           Our med spa services leave you feeling rejuvenated and excited about
           the results.
         </div>
-        <a className="text-center mx-auto cursor-pointer py-7 px-20 text-white bg-black text-lgmax-w-xs fade-in">
+        <a
+          className="text-center mx-auto cursor-pointer py-7 px-20 text-white bg-black text-lgmax-w-xs fade-in"
+          href="https://toxedbytay.glossgenius.com/"
+          target="_blank"
+        >
           Book Now
         </a>
       </div>

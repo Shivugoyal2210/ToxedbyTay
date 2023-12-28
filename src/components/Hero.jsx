@@ -17,9 +17,13 @@ const Hero = () => {
           restores volume loss and creates a natural and more refreshed version
           of you.
         </div>
-        <span className="text-center mx-auto cursor-pointer py-7 px-16 text-white bg-black text-lgmax-w-xs fade-in">
+        <a
+          className="text-center mx-auto cursor-pointer py-7 px-16 text-white bg-black text-lgmax-w-xs fade-in"
+          href="https://toxedbytay.glossgenius.com/"
+          target="_blank"
+        >
           Book Now
-        </span>
+        </a>
       </div>
     </div>
   );

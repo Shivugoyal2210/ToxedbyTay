@@ -131,9 +131,13 @@ const ServicesContent = () => {
               14-21 after your initial treatment.
             </p>
           </div>
-          <div className="cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20">
+          <a
+            className="block cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20"
+            href="https://toxedbytay.glossgenius.com/"
+            target="_blank"
+          >
             Book Now
-          </div>
+          </a>
           <div className="accordion w-[90%] mx-auto">
             {faq_1.map((item, i) => (
               <div
@@ -143,7 +147,29 @@ const ServicesContent = () => {
               >
                 <div className="title">
                   <h2 className="flex justify-between">
-                    {item.question} <span>{item.open ? "-" : "+"}</span>
+                    {item.question}{" "}
+                    <svg
+                      className={item.open ? "minus" : "plus"}
+                      viewBox="0 0 100 100"
+                      width="15"
+                    >
+                      <rect
+                        className="horizontal"
+                        width="80"
+                        height="10"
+                        x="10"
+                        y="33"
+                        rx="5"
+                      ></rect>
+                      <rect
+                        className="vertical"
+                        width="10"
+                        height="80"
+                        x="45"
+                        y="0"
+                        rx="5"
+                      ></rect>
+                    </svg>
                   </h2>
                 </div>
                 <div
@@ -179,9 +205,13 @@ const ServicesContent = () => {
               Lip Enhancer for post-treatment.
             </p>
           </div>
-          <div className="cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20">
+          <a
+            className="block cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20"
+            href="https://toxedbytay.glossgenius.com/"
+            target="_blank"
+          >
             Book Now
-          </div>
+          </a>
           <div className="accordion w-[90%] mx-auto">
             {faq_2.map((item, i) => (
               <div
@@ -191,7 +221,29 @@ const ServicesContent = () => {
               >
                 <div className="title">
                   <h2 className="flex justify-between">
-                    {item.question} <span>{item.open ? "-" : "+"}</span>
+                    {item.question}{" "}
+                    <svg
+                      className={item.open ? "minus" : "plus"}
+                      viewBox="0 0 100 100"
+                      width="15"
+                    >
+                      <rect
+                        className="horizontal"
+                        width="80"
+                        height="10"
+                        x="10"
+                        y="33"
+                        rx="5"
+                      ></rect>
+                      <rect
+                        className="vertical"
+                        width="10"
+                        height="80"
+                        x="45"
+                        y="0"
+                        rx="5"
+                      ></rect>
+                    </svg>
                   </h2>
                 </div>
                 <div
@@ -245,9 +297,13 @@ const ServicesContent = () => {
               natural collagen!
             </p>
           </div>
-          <div className="cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20">
+          <a
+            className="block cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20"
+            href="https://toxedbytay.glossgenius.com/"
+            target="_blank"
+          >
             Book Now
-          </div>
+          </a>
           <div className="accordion w-[90%] mx-auto">
             {faq_3.map((item, i) => (
               <div
@@ -257,7 +313,29 @@ const ServicesContent = () => {
               >
                 <div className="title">
                   <h2 className="flex justify-between">
-                    {item.question} <span>{item.open ? "-" : "+"}</span>
+                    {item.question}{" "}
+                    <svg
+                      className={item.open ? "minus" : "plus"}
+                      viewBox="0 0 100 100"
+                      width="15"
+                    >
+                      <rect
+                        className="horizontal"
+                        width="80"
+                        height="10"
+                        x="10"
+                        y="33"
+                        rx="5"
+                      ></rect>
+                      <rect
+                        className="vertical"
+                        width="10"
+                        height="80"
+                        x="45"
+                        y="0"
+                        rx="5"
+                      ></rect>
+                    </svg>
                   </h2>
                 </div>
                 <div
