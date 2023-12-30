@@ -119,7 +119,7 @@ const Footer = () => {
                 Home
               </NavLink>
               <a
-                className="cursor-pointer"
+                className="text-white underline mx-auto"
                 href="https://skinbetter.pro/toxedbytay"
                 target="_blank"
               >

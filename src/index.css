@@ -230,7 +230,5 @@ body {
 }
 
 .minus .vertical {
-  transform: rotate(90deg);
-  y: 10;
-  x: 35;
+  transform: rotate(90deg) translateY(10px) translateX(-10px);
 }
