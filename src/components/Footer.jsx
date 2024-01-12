@@ -89,7 +89,6 @@ const Footer = () => {
           </NavLink>
           <NavLink
             to="/contact#faq"
-            reloadDocument
             className="text-white underline mx-auto"
             passHref
           >
