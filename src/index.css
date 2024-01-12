@@ -22,10 +22,6 @@ body {
   margin-right: auto;
 }
 
-/* .services-nav .nav-item:not(:last-child) {
-  border-right: white solid 1px;
-} */
-
 .nav-item {
   text-decoration: underline;
 }

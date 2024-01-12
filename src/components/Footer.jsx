@@ -75,6 +75,7 @@ const Footer = () => {
             to="/services"
             className="text-white underline mx-auto"
             reloadDocument
+            passHref
           >
             Services
           </NavLink>
@@ -82,13 +83,15 @@ const Footer = () => {
             to="/contact"
             reloadDocument
             className="text-white underline mx-auto"
+            passHref
           >
             Contact
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/contact#faq"
             reloadDocument
             className="text-white underline mx-auto"
+            passHref
           >
             FAQ
           </NavLink>
@@ -112,7 +115,7 @@ const Footer = () => {
           <div className="w-[80%] max-w-6xl flex justify-between mx-auto py-20">
             <div className="flex flex-col gap-5 justify-center">
               <NavLink
-                t0="/"
+                to="/"
                 className="text-white underline mx-auto text-lg hover:cursor-pointer"
                 reloadDocument
               >
@@ -125,9 +128,14 @@ const Footer = () => {
               >
                 Shop
               </a>
-              <a href="/services" className="text-white underline mx-auto">
+              <NavLink
+                to="/services"
+                className="text-white underline mx-auto"
+                passHref
+                reloadDocument
+              >
                 Services
-              </a>
+              </NavLink>
               <a href="/contact" className="text-white underline mx-auto">
                 Contact
               </a>
