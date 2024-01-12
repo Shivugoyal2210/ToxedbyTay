@@ -94,11 +94,13 @@ const Footer = () => {
           >
             FAQ
           </NavLink>
-          <input
-            type="button"
-            value="Book Now"
+          <a
+            href="https://toxedbytay.glossgenius.com/"
             className="bg-neutral-300 text-black py-4 text-lg px-12 mx-auto"
-          />
+            target="_blank"
+          >
+            Book Now
+          </a>
           <p className="mx-auto">
             <InstagramIcon color="action" />
             <MailOutlineIcon />
@@ -159,11 +161,13 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-col gap-10 justify-center">
-              <input
-                type="button"
-                value="Book Now"
+              <a
+                href="https://toxedbytay.glossgenius.com/"
                 className="bg-neutral-300 text-black py-7 text-lg px-14 mx-auto"
-              />
+                target="_blank"
+              >
+                Book Now
+              </a>
               <p className="mx-auto">
                 <InstagramIcon style={{ color: "white", marginRight: 5 }} />
                 <MailOutlineIcon style={{ color: "white" }} />
