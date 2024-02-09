@@ -102,8 +102,19 @@ const Footer = () => {
             Book Now
           </a>
           <p className="mx-auto">
-            <InstagramIcon color="action" />
-            <MailOutlineIcon />
+            <a
+              href="https://www.instagram.com/toxedbytay?igsh=MTJxMW54anB2bzZteg=="
+              target="_blank"
+            >
+              <InstagramIcon
+                style={{ color: "white" }}
+                className="cursor-pointer"
+              />
+            </a>
+            <MailOutlineIcon
+              style={{ color: "white" }}
+              className="cursor-pointer"
+            />
           </p>
           <a href="#" className="text-white underline mx-auto">
             4117 N. 17th St, Phoenix, AZ 85016
@@ -163,20 +174,32 @@ const Footer = () => {
             <div className="flex flex-col gap-10 justify-center">
               <a
                 href="https://toxedbytay.glossgenius.com/"
-                className="bg-neutral-300 text-black py-7 text-lg px-14 mx-auto"
+                className="text-white text-lg mx-auto underline"
                 target="_blank"
               >
                 Book Now
               </a>
               <p className="mx-auto">
-                <InstagramIcon style={{ color: "white", marginRight: 5 }} />
-                <MailOutlineIcon style={{ color: "white" }} />
+                <a
+                  href="https://www.instagram.com/toxedbytay?igsh=MTJxMW54anB2bzZteg=="
+                  target="_blank"
+                >
+                  <InstagramIcon
+                    style={{ color: "white", marginRight: 5 }}
+                    className="cursor-pointer"
+                  />
+                </a>
+
+                <MailOutlineIcon
+                  style={{ color: "white" }}
+                  className="cursor-pointer"
+                />
               </p>
             </div>
           </div>
         </div>
         <p className="text-white mx-auto text-xs">
-          &copy;2022 Copyright Taylor Northcott Aesthetics. All rights reserved.
+          &copy;2024 Copyright Taylor Northcott Aesthetics. All rights reserved.
         </p>
       </div>
     </div>

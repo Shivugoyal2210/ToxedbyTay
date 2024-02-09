@@ -119,7 +119,7 @@ const ServicesContent = () => {
         />
         <div className="w-full mt-10 fade-in">
           <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5">
-            <h1 className="tracking-widest mb-7">NEUROMODULATORS</h1>
+            <h1 className="font-apoth mb-7">NEUROMODULATORS</h1>
             <p className="mb-5">
               Taylor Northcott Aesthetics has a variety of options of
               Neuromodulators, AKA Tox. At your appointment Taylor will assess
@@ -192,7 +192,7 @@ const ServicesContent = () => {
         />
         <div className="w-full service-2 fade-in">
           <div className="services-text-mid w-[90%] mt-10 text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
-            <h1 className="tracking-widest mb-7">FILLERS</h1>
+            <h1 className="font-apoth mb-7">FILLERS</h1>
             <p className="mb-5">
               Taylor Northcott Aesthetics has a variety of options for Dermal
               Fillers including Hyaluronic Acid and Biostimulator products. At
@@ -264,7 +264,7 @@ const ServicesContent = () => {
         />
         <div className="w-full fade-in">
           <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
-            <h1 className="tracking-widest mb-7">SKIN TIGHTENING</h1>
+            <h1 className="font-apoth mb-7">SKIN TIGHTENING</h1>
             <p className="mb-5">
               Taylor Northcott Aesthetics provides a variety of skin-tightening
               options. Common areas for skin tightening include: face/neck,

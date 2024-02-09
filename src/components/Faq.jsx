@@ -40,7 +40,7 @@ const Faq = () => {
       <p className="cursive text-7xl text-center mb-10 ">
         Frequently Asked Questions
       </p>
-      <h1 className="tracking-widest mb-7 w-[80%] mx-auto">NEUROMODULATORS</h1>
+      <h1 className="font-apoth mb-7 w-[80%] mx-auto">NEUROMODULATORS</h1>
       <div className="accordion w-[80%] mx-auto text-lg">
         {faq_1.map((item, i) => (
           <div
@@ -78,7 +78,7 @@ const Faq = () => {
             </div>
             <div
               className={
-                item.open ? "fade-in-text content block mt-5" : "hidden"
+                item.open ? "fade-in-text content block mt-4" : "hidden"
               }
             >
               {item.answer}
@@ -87,7 +87,7 @@ const Faq = () => {
         ))}
       </div>
 
-      <h1 className="tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
+      <h1 className="font-apoth tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
         FILLERS
       </h1>
       <div className="accordion w-[80%] mx-auto text-lg">
@@ -131,7 +131,7 @@ const Faq = () => {
         ))}
       </div>
 
-      <h1 className="tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
+      <h1 className="font-apoth tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
         SKIN TIGHTENING
       </h1>
       <div className="accordion w-[80%] mx-auto text-lg">

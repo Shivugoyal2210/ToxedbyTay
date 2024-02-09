@@ -40,6 +40,18 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "apoth";
+  src: url("./Taylor Northcott Aesthetics-Identity/03 Fonts/Apothecary/Apothecary Typewewriter.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-apoth {
+  font-family: apoth;
+  font-size: 3.5rem;
+}
 .cursive {
   font-family: myCursive;
 }
