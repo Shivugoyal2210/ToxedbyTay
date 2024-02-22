@@ -42,8 +42,7 @@ body {
 
 @font-face {
   font-family: "apoth";
-  src: url("./Taylor Northcott Aesthetics-Identity/03 Fonts/Apothecary/Apothecary Typewewriter.otf")
-    format("opentype");
+  src: url("./assets/fonts/apothecaryTypewriter.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
