@@ -51,6 +51,11 @@ body {
   font-family: apoth;
   font-size: 3.5rem;
 }
+
+.font-apoth2 {
+  font-family: apoth;
+  font-size: 4rem;
+}
 .cursive {
   font-family: myCursive;
 }

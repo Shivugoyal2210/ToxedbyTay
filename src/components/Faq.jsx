@@ -40,8 +40,8 @@ const Faq = () => {
       <p className="cursive text-7xl text-center mb-10 ">
         Frequently Asked Questions
       </p>
-      <h1 className="font-apoth mb-7 w-[80%] mx-auto">NEUROMODULATORS</h1>
-      <div className="accordion w-[80%] mx-auto text-lg">
+      <h1 className="font-apoth2 mb-7 w-[80%] mx-auto">NEUROMODULATORS</h1>
+      <div className="accordion w-[80%] mx-auto text-base">
         {faq_1.map((item, i) => (
           <div
             className="item cursor-pointer"
@@ -87,10 +87,10 @@ const Faq = () => {
         ))}
       </div>
 
-      <h1 className="font-apoth tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
+      <h1 className="font-apoth2 tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
         FILLERS
       </h1>
-      <div className="accordion w-[80%] mx-auto text-lg">
+      <div className="accordion w-[80%] mx-auto text-base">
         {faq_2.map((item, i) => (
           <div
             className="item cursor-pointer"
@@ -131,10 +131,10 @@ const Faq = () => {
         ))}
       </div>
 
-      <h1 className="font-apoth tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
+      <h1 className="font-apoth2 tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
         SKIN TIGHTENING
       </h1>
-      <div className="accordion w-[80%] mx-auto text-lg">
+      <div className="accordion w-[80%] mx-auto text-base">
         {faq_3.map((item, i) => (
           <div
             className="item cursor-pointer"
