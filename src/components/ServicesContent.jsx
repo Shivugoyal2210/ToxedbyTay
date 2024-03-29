@@ -93,13 +93,6 @@ const ServicesContent = () => {
             className="nav-item text-white text-lg cursor-pointer"
             onClick={() => scrollToSection(tightening)}
           >
-            Microneedling
-          </div>
-          <span className="text-white">|</span>
-          <div
-            className="nav-item text-white text-lg cursor-pointer"
-            onClick={() => scrollToSection(tightening)}
-          >
             Biostimulator
           </div>
           <span className="text-white">|</span>
@@ -107,7 +100,7 @@ const ServicesContent = () => {
             className="nav-item text-white text-lg cursor-pointer"
             onClick={() => scrollToSection(tightening)}
           >
-            PRP/PRF
+            ADVATx
           </div>
         </div>
       </div>
@@ -270,16 +263,6 @@ const ServicesContent = () => {
               options. Common areas for skin tightening include: face/neck,
               chest, and hands.
             </p>
-            <h6>Microneedling</h6>
-            <p className="mb-12">
-              Microneedling is a light resurfacing treatment that aids in the
-              reduction of fine lines, minor scars, improves skin
-              quality/texture as well as promotes skin tightening. The needles
-              stimulate collagen production by causing minor injury to the skin.
-              This minor injury stimulates the body’s collagen-producing cells
-              to create new/strong collagen. Microneedling can be performed as
-              an individual treatment; however, works best in a package of 3.
-            </p>
             <h6>Biostimulator</h6>
             <p className="mb-12">
               A Biostimulator is a more invasive form of skin tightening. The
@@ -288,13 +271,21 @@ const ServicesContent = () => {
               RADIESSE promotes improved skin texture, tone, restores minor
               volume, and drastically softens fine lines and wrinkles.
             </p>
-            <h6>PRP/PRF add-on</h6>
+            <h6>ADVATx</h6>
             <p className="mb-12">
-              PRP/PRF is collected from a blood draw at the beginning of your
-              appointment. The blood is then spun down to collect the serum or
-              PRP/PRF. The serum contains grown factors which when injected or
-              needled into the skin stimulates your body to produce its own
-              natural collagen!
+              Worldwide, millions of people are bothered by the appearance of
+              vascular lesions, rosacea, acne, wrinkles and scars. These
+              conditions are often associated with a negative impact on self
+              image and may result in psychological negativity. Laser therapy
+              has proven to be efficient in reducing and resolving many of these
+              unwanted conditions, thereby improving overall appearance and
+              reinstating self confidence. <br></br>
+              The combination of high powered yellow and infrared laser energy
+              come together to improve skin tone, texture and overall skin
+              health by targeting the vascular components of uneven skin tone,
+              sun damage and unwanted pigmentation while simultaneously reducing
+              wrinkles, limiting oil production and shrinking pore size. We
+              promise you will leave the spa with youthful, glowing skin!
             </p>
           </div>
           <a
