@@ -40,7 +40,7 @@ const Faq = () => {
       <p className="cursive text-7xl text-center mb-10 ">
         Frequently Asked Questions
       </p>
-      <h1 className="font-apoth2 mb-7 w-[80%] mx-auto">NEUROMODULATORS</h1>
+      <h1 className="font-apoth2 mb-7 w-[80%] mx-auto">Botox</h1>
       <div className="accordion w-[80%] mx-auto text-base">
         {faq_1.map((item, i) => (
           <div

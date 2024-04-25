@@ -112,14 +112,14 @@ const ServicesContent = () => {
         />
         <div className="w-full mt-10 fade-in">
           <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5">
-            <h1 className="font-apoth mb-7">NEUROMODULATORS</h1>
+            <h1 className="font-apoth mb-7">Botox</h1>
             <p className="mb-5">
               Taylor Northcott Aesthetics has a variety of options of
-              Neuromodulators, AKA Tox. At your appointment Taylor will assess
-              your needs and determine the best Tox for you.
+              Neuromodulators, AKA Botox. At your appointment Taylor will assess
+              your needs and determine the best Botox for you.
             </p>
             <p className="mb-20">
-              *Tox takes a full 14 days for results. For first time clients
+              *Botox takes a full 14 days for results. For first time clients
               touch ups are complimentary within treatment area between days
               14-21 after your initial treatment.
             </p>
