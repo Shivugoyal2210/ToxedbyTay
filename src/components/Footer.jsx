@@ -120,7 +120,7 @@ const Footer = () => {
             4117 N. 17th St, Phoenix, AZ 85016
           </a>
           <a href="#" className="text-white underline mx-auto">
-            (480)-648-9401
+            (480)-313-9659
           </a>
         </div>
         <div className="footer-big hidden">
@@ -168,7 +168,7 @@ const Footer = () => {
                 4117 N. 17th St, Phoenix, AZ 85016
               </a>
               <a href="#" className="text-white underline mx-auto">
-                (480)-648-9401
+                (480)-313-9659
               </a>
             </div>
             <div className="flex flex-col gap-10 justify-center">

@@ -3,6 +3,7 @@ import { Formik } from "formik";
 import { TextField, useMediaQuery } from "@mui/material";
 import * as yup from "yup";
 import Faq from "./Faq";
+import { aboutMe } from "../assets/images";
 
 const ContactForm = () => {
   const big = useMediaQuery("(min-width:960px)");
@@ -36,7 +37,7 @@ const ContactForm = () => {
             </a>
             <br />
             <a className="underline" href="tel:+14806489401">
-              (480)-648-9401
+              (480)-313-9659
             </a>
             <p className="mt-8 mb-5">
               <span className="font-bold">Questions?</span> Send us a message!
@@ -129,51 +130,61 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="about-me my-[5rem] bg-pink-100 py-10">
-          <div className={big ? "w-[40%] ml-[52%]" : "w-[80%] mx-auto"}>
-            <p className="cursive text-8xl mb-10">hi, I'm Taylor…</p>
-            <p className="mb-5">
-              I am a Registered Nurse and Licensed Aesthetician.{" "}
-            </p>
-            <p className="mb-5">
-              I started my nursing career in the Intensive Care Unit (ICU). I
-              left the hospital in 2019 and found an amazing job working as a
-              Case Manager for an infusion pharmacy. I loved the job but missed
-              patient interaction.
-            </p>
-            <p className="mb-5">
-              In January 2021 I started learning Neuromodulators/Filler and love
-              it. I have set up a studio and am currently accepting new
-              patients. I love helping people feel beautiful and confident!
-            </p>
-            <p className="mb-5">
-              When I’m not working, I spend my time with my two Boxers, Benjamin
-              and Birdie. I love home decor, travel, and spending time with
-              friends and family.
-            </p>
-            <p className="font-bold">Certifications:</p>
-            <p>Registered Nurse, August 2015</p>
-            <p>Licensed Aesthetician, March 2010</p>
-            <p>
-              Aesthetic Medical Educators Training for Botulinum Toxin/ Dermal
-              Filler, January 2021
-            </p>
-            <p className="mb-5">Microneedling, November 2021</p>
-            <p className="font-bold">
-              Medical Director/Primary Injector Trainor
-            </p>
-            <p className="mb-10">Erin Jones, FNP/ PMHNP</p>
-            <a
-              className="bg-black text-white mt-[8rem] py-6 px-12 w-1/2 cursor-pointer "
-              href="https://toxedbytay.glossgenius.com/"
-              target="_blank"
-            >
-              Book Now
-            </a>
-            {/* <input
-              type="button"
-              value="Book Now"
-              className="bg-black text-white mt-[8rem] py-6 px-5 w-1/2 cursor-pointer "
-            /> */}
+          <div
+            className={`flex ${
+              big
+                ? "flex-row justify-between items-start space-x-8"
+                : "flex-col"
+            }`}
+          >
+            <img
+              src={aboutMe}
+              alt="about me"
+              className={`${
+                big ? "w-[45%] ml-8" : "w-[80%] mx-auto mt-5 mb-5"
+              }`}
+            />
+            <div className={`${big ? "w-[45%] pr-8" : "w-[80%] mx-auto"}`}>
+              <p className="cursive text-8xl mb-10">Hi, I'm Taylor…</p>
+              <p className="mb-5">
+                I am a Registered Nurse and Licensed Aesthetician.
+              </p>
+              <p className="mb-5">
+                I started my nursing career in the Intensive Care Unit (ICU). I
+                left the hospital in 2019 and found an amazing job working as a
+                Case Manager for an infusion pharmacy. I loved the job but
+                missed patient interaction.
+              </p>
+              <p className="mb-5">
+                In January 2021 I started learning Neuromodulators/Filler and
+                love it. I have set up a studio and am currently accepting new
+                patients. I love helping people feel beautiful and confident!
+              </p>
+              <p className="mb-5">
+                When I’m not working, I spend my time with my two Boxers,
+                Benjamin and Birdie. I love home decor, travel, and spending
+                time with friends and family.
+              </p>
+              <p className="font-bold">Certifications:</p>
+              <p>Registered Nurse, August 2015</p>
+              <p>Licensed Aesthetician, March 2010</p>
+              <p>
+                Aesthetic Medical Educators Training for Botulinum Toxin/ Dermal
+                Filler, January 2021
+              </p>
+              <p className="mb-5">Microneedling, November 2021</p>
+              <p className="font-bold">
+                Medical Director/Primary Injector Trainor
+              </p>
+              <p className="mb-10">Erin Jones, FNP/ PMHNP</p>
+              <a
+                className="bg-black text-white mt-8 py-6 px-12 w-full cursor-pointer"
+                href="https://toxedbytay.glossgenius.com/"
+                target="_blank"
+              >
+                Book Now
+              </a>
+            </div>
           </div>
         </div>
         <Faq />
