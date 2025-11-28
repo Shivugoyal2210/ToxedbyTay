@@ -6,8 +6,9 @@ const Services = () => {
   useEffect(() => {
     const config = {
       root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
+      // match ServicesContent to ensure fade-in works consistently on small devices
+      rootMargin: "0px 0px -10% 0px",
+      threshold: 0.25,
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -45,7 +46,7 @@ const Services = () => {
             alt="fillers"
           />
           <img
-            onClick={() => navigate(`/services#tightening`)}
+            onClick={() => navigate(`/services#advaTx`)}
             src={skinTightening}
             className="hover:brightness-50 cursor-pointer fade-in"
             alt="skinTightening"

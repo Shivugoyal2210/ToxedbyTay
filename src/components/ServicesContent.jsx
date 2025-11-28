@@ -8,8 +8,9 @@ const ServicesContent = () => {
   useEffect(() => {
     const config = {
       root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
+      // trigger slightly earlier on mobile so fade-in content appears reliably
+      rootMargin: "0px 0px -10% 0px",
+      threshold: 0.25,
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -111,45 +112,45 @@ const ServicesContent = () => {
   };
   return (
     <div>
-      <div className="services-nav w-screen min-h-[120px]">
-        <div className="hidden lg:flex justify-center content-center py-10  gap-10 mb-8 ">
+      <div className="services-nav w-screen min-h-[160px] lg:min-h-[120px]">
+        <div className="flex flex-wrap lg:flex-nowrap justify-center items-center py-6 gap-6 mb-8">
           <div
-            className="nav-item text-white text-lg cursor-pointer"
+            className="nav-item text-white text-sm lg:text-lg cursor-pointer px-2"
             onClick={() => scrollToSection(neuro)}
           >
             Neuromodulators (Tox)
           </div>{" "}
-          <span className="text-white">|</span>
+          <span className="hidden lg:inline text-white">|</span>
           <div
-            className="nav-item text-white text-lg  cursor-pointer"
+            className="nav-item text-white text-sm lg:text-lg cursor-pointer px-2"
             onClick={() => scrollToSection(fillers)}
           >
             Filler — Restore, Refine, Rebalance
           </div>
-          <span className="text-white">|</span>
+          <span className="hidden lg:inline text-white">|</span>
           <div
-            className="nav-item text-white text-lg cursor-pointer"
+            className="nav-item text-white text-sm lg:text-lg cursor-pointer px-2"
             onClick={() => scrollToSection(advaTx)}
           >
             ADVATx Laser — The Ultimate Skin Perfecting Laser
           </div>
-          <span className="text-white">|</span>
+          <span className="hidden lg:inline text-white">|</span>
           <div
-            className="nav-item text-white text-lg cursor-pointer"
+            className="nav-item text-white text-sm lg:text-lg cursor-pointer px-2"
             onClick={() => scrollToSection(microneedling)}
           >
             Microneedling
           </div>
-          <span className="text-white">|</span>
+          <span className="hidden lg:inline text-white">|</span>
           <div
-            className="nav-item text-white text-lg cursor-pointer"
+            className="nav-item text-white text-sm lg:text-lg cursor-pointer px-2"
             onClick={() => scrollToSection(acne)}
           >
             Acne & Acne Scar Treatments
           </div>
-          <span className="text-white">|</span>
+          <span className="hidden lg:inline text-white">|</span>
           <div
-            className="nav-item text-white text-lg cursor-pointer"
+            className="nav-item text-white text-sm lg:text-lg cursor-pointer px-2"
             onClick={() => scrollToSection(hair)}
           >
             Hair Restoration at RESTORE by TXT
@@ -350,7 +351,7 @@ const ServicesContent = () => {
           </div>
         </div>
       </div>
-      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0" ref={microneedling} id="microneedling">
+      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0 min-h-[520px] lg:min-h-[600px]" ref={microneedling} id="microneedling">
         <img
           src={toxImg}
           alt="Microneedling"
@@ -422,7 +423,7 @@ const ServicesContent = () => {
           </div>
         </div>
       </div>
-      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0" ref={acne} id="acne">
+      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0 min-h-[520px] lg:min-h-[600px]" ref={acne} id="acne">
         <img
           src={skinImg}
           alt="Acne & Acne Scar Treatments"
@@ -494,7 +495,7 @@ const ServicesContent = () => {
           </div>
         </div>
       </div>
-      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0" ref={hair} id="hair">
+      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0 min-h-[520px] lg:min-h-[600px]" ref={hair} id="hair">
         <img
           src={skinImg}
           alt="Hair Restoration"
