@@ -1,7 +1,7 @@
 {
-  "Tox & Neuromodulators": {
+  "Neuromodulators (Tox)": {
     "id": 1,
-    "description": "Taylor Northcott Aesthetics has a variety of options of Neuromodulators, AKA Botox. At your appointment Taylor will assess your needs and determine the best Botox for you.\n*Tox takes a full 14 days for results. For first time clients touch ups are complimentary within treatment area between days 14-21 after your initial treatment.",
+    "description": "Smooth, refined, and natural-looking results—without freezing your expression.Neuromodulators, commonly known as “tox” treatments (like Botox®, Dysport®, Xeomin®, or Jeuveau®), are injectable wrinkle relaxers that soften dynamic lines caused by facial movement. By temporarily relaxing specific muscles, neuromodulators smooth existing lines and prevent new ones from forming—helping you look rested, refreshed, and confident.",
     "types": [],
     "image": "toxImg.jpg",
     "FAQs": [
@@ -20,55 +20,189 @@
       {
         "question": "Which neuromodulator is right for me?",
         "answer": "This will be discussed during your consultation. Botox choice varies from person to person. Furthermore, it is encouraged to switch brands occasionally to avoid Botox tolerance."
+      },
+      {
+        "question": "How does it work?",
+        "answer": "Tox works by gently blocking communication between the nerve and muscle in the treated area. This relaxation allows the overlying skin to smooth, giving a more youthful, lifted appearance while maintaining natural expression."
       }
     ]
   },
-  "Fillers": {
+  "Filler — Restore, Refine, Rebalance": {
     "id": 2,
-    "description": "Taylor Northcott Aesthetics has a variety of options for Dermal Fillers including Hyaluronic Acid and Biostimulator products. At your appointment, Taylor will assess your needs and determine the best filler option for you. Common treatment areas include cheeks, chin, Jaw line, and lips.\n Lips include a dental block, reusable icepack, and Image Restoring Lip Enhancer for post-treatment.",
+    "description": "At RESTORE by TXT, filler isn’t about changing your face — it’s about restoring harmony, balance, and youthful volume in a natural way. Using advanced techniques and high-quality hyaluronic acid fillers, we subtly enhance your features while maintaining your natural expression and proportions.",
     "types": [],
     "image": "fillerImg.jpg",
     "FAQs": [
       {
         "question": "How long does it last?",
-        "answer": "On average, fillers last 6-18 months and depends on the specific product used, the amount and the patient’s history and lifestyle."
+        "answer": "On average, fillers last 9-18 months and depends on the specific product used, the amount and the patient’s history and lifestyle."
       },
       {
         "question": "What are the side effects?",
         "answer": "Common side effects are bruising, swelling, redness, mild pain and tenderness. Avoid ibuprofen and alcohol at least 72 hours prior to procedure to avoid additional bruising."
+      },
+      {
+        "question": "How does it work?",
+        "answer": "Dermal fillers are composed of hyaluronic acid (HA) — a naturally occurring substance in your skin that binds water and adds structure. When strategically placed beneath the surface, filler restores youthful volume, supports collagen, and enhances definition instantly."
+      },
+    {
+        "question": "Why do we love it at RESTORE",
+        "answer": "Our approach is art-meets-anatomy. Every treatment is customized to your unique facial structure and aesthetic goals — whether that’s a hydrated “lip refresh,” a subtle contour lift, or full facial balancing. The goal: You, but more confident."
       }
     ]
   },
-  "Skin Tightening": {
-    "id": 3,
-    "description": "Taylor Northcott Aesthetics provides a variety of skin-tightening options. Common areas for skin tightening include: face/neck, chest, and hands.",
+  "ADVATx Laser — The Ultimate Skin Perfecting Laser": {
+    "id": 4,
+    "description": "The ADVATx is one of the most advanced regenerative skin lasers in the world—designed to target multiple skin concerns in a single, gentle treatment with no downtime. Using dual wavelengths of pure yellow and infrared light, ADVATx works deep within the skin to calm inflammation, destroy acne-causing bacteria, and stimulate collagen remodeling for long-term results. Think of it as the “all-in-one” laser for healthy, radiant skin.",
+    "types": [],
+    "image": "skinImg.jpg",
+    "FAQs": [
+      {
+        "question": "What does it treat?",
+        "answer": "✨ Redness + Rosacea ✨ Acne + Acne Scars ✨ Pigment + Sun Damage ✨ Enlarged Pores ✨ Fine Lines + Wrinkles ✨ Uneven Tone + Texture ✨ Broken Capillaries ✨ Overall Skin Rejuvenation"
+      },
+      {
+        "question": "How does it work?",
+        "answer": "ADVATx combines 589 nm (yellow) and 1319 nm (infrared) wavelengths to target both the surface and deeper layers of skin.\nThe yellow light calms inflammation, kills acne bacteria, and reduces redness, flushing, and visible vessels.\nThe infrared light penetrates deeper to boost collagen production, firm the skin, and smooth texture. The result? Clearer, calmer, tighter, and more even-toned skin—without heat damage or downtime."
+      },
+      {
+        "question": "Why We Love It at RESTORE:",
+        "answer": "It’s safe for all skin types, gentle enough to do in a series, and powerful enough to transform the skin from the inside out. Whether you’re struggling with acne, rosacea, or just want that glass-skin glow, ADVATx helps your skin function better naturally."
+      }
+    ]
+  },
+    "Microneedling":{
+    "id": 5,
+    "description": "Microneedling is one of the most effective, natural ways to firm, tighten, and rejuvenate the skin from within. Using a series of controlled micro-injuries, this treatment stimulates collagen and elastin production—your skin’s own tightening and healing proteins—to smooth texture, minimize fine lines, and restore youthful bounce. Microneedling with any of these regenerative serums triggers your body’s natural remodeling process—tightening and toning skin on the face, neck with minimal downtime and long-lasting results.",
     "types": [
       {
         "id": 1,
-        "name": "Microneedling",
-        "description": "Microneedling is a light resurfacing treatment that aids in the reduction of fine lines, minor scars, improves skin quality/texture as well as promotes skin tightening. The needles stimulate collagen production by causing minor injury to the skin. This minor injury stimulates the body’s collagen-producing cells to create new/strong collagen. Microneedling can be performed as an individual treatment; however, works best in a package of 3."
+        "name": "Hyaluronic Acid (HA)",
+        "description": "Deeply hydrates, plumps, and improves elasticity for a smoother, supple feel."
       },
       {
         "id": 2,
-        "name": "Biostimulator",
-        "description": "A Biostimulator is a more invasive form of skin tightening. The collagen-producing stimulator is injected into your skin to encourage your body to produce new strong collagen! Hyperdilute RADIESSE promotes improved skin texture, tone, restores minor volume, and drastically softens fine lines and wrinkles."
+        "name": "PRP (Platelet-Rich Plasma",
+        "description": "Uses your own platelets to release growth factors that accelerate healing, tighten, and restore a healthy glow."
       },
       {
         "id": 3,
-        "name": "PRP/PRF add-on",
-        "description": "PRP/PRF is collected from a blood draw at the beginning of your appointment. The blood is then spun down to collect the serum or PRP/PRF. The serum contains grown factors which when injected or needled into the skin stimulates your body to produce its own natural collagen!"
+        "name": "PDGF (Platelet-Derived Growth Factor)",
+        "description": "A regenerative booster that amplifies collagen production and enhances skin density—ideal for crepey, lax areas."
+      },
+      {
+        "id": 4,
+        "name": "PDRN (Polydeoxyribonucleotide)",
+        "description": "Derived from salmon DNA, it promotes cell renewal and tissue repair for firmer, more resilient skin."
+      }
+  ],
+    "image": "toxImg.jpg",
+    "FAQs": [
+      {
+        "question": "What is Microneedling?",
+        "answer": "Microneedling is a minimally invasive cosmetic procedure that involves the use of fine needles to create tiny punctures in the skin. This process stimulates the body's natural healing response, promoting collagen and elastin production, which can improve skin texture, tone, and overall appearance."
+      },
+      {
+        "question": "What are the benefits of Microneedling?",
+        "answer": "Microneedling can help reduce the appearance of fine lines, wrinkles, acne scars, and hyperpigmentation. It can also improve skin firmness and elasticity, resulting in a more youthful complexion."
+      },
+      {
+        "question": "How many sessions are needed?",
+        "answer": "The number of sessions required varies depending on individual skin concerns and goals. Typically, a series of 3-6 treatments spaced 4-6 weeks apart is recommended for optimal results."
+      },
+      {
+        "question": "Is there any downtime?",
+        "answer": "Downtime is minimal with microneedling. Some redness and mild swelling may occur immediately after the procedure, but this usually subsides within a few days. Most patients can return to their normal activities shortly after treatment."
+      }
+    ]
+    }
+    ,
+  "Acne & Acne Scar Treatments": {
+    "id": 6,
+    "description": "Breakouts can be frustrating—but with the right combination of advanced technology and targeted care, clear and balanced skin is possible. At RESTORE by TXT, acne treatment is customized for your skin’s root cause—whether that’s inflammation, bacteria, oil imbalance, or scarring.",
+    "types": [
+      {
+        "id": 1,
+        "name": "ADVATx Laser Therapy",
+        "description": "Our gold-standard laser for acne and redness. ADVATx safely targets overactive oil glands, kills acne-causing bacteria, and calms inflammation—all without downtime. Skin looks clearer, calmer, and more even."
+      },
+      {
+        "id": 2,
+        "name": "Hydrodermabrasion Facial",
+        "description": "Deeply cleanses pores, removes buildup, and infuses hydrating, clarifying serums to restore a healthy glow."
+      },
+      {
+        "id": 3,
+        "name": "Enzyme Therapy",
+        "description": "Gently resurfaces and rebalances the skin using natural enzymes—perfect for sensitive or congested skin types."
+      },
+      {
+        "id": 4,
+        "name": "The Perfect Peel",
+        "description": "A medical-grade chemical peel that targets acne, pigment, and texture. It lifts discoloration, purifies pores, and reveals smoother, clearer skin within a week."
       }
     ],
     "image": "skinImg.jpg",
     "FAQs": [
       {
-        "question": "What are the benefits?",
-        "answer": "The benefits include stimulating cell turnover, improving skin tone, reducing pore size, wrinkles, and fine lines. It can also be helpful to individuals with rosacea, visible acne scars and sun damage."
+        "question": "Is this for active acne or scars?",
+        "answer": "We treat both. Your consultation will determine whether immediate acne control, scar remodeling, or a combination is the best approach."
       },
       {
-        "question": "When do I see results for each procedure?",
-        "answer": "Results begin within the first week and will continue to improve up to 90 days after treatment. Patients can expect to see some redness, swelling and skin tightness. Typically redness resolves within 72 hours."
+        "question": "How many sessions will I need?",
+        "answer": "Active acne often improves within weeks with medical therapy; scar treatments typically require a series of 3–6 procedures spaced 4–8 weeks apart."
+      },
+      {
+        "question": "Is there downtime?",
+        "answer": "Downtime depends on the chosen treatment. Many options have minimal downtime (ADVATx, superficial peels), while deeper peels or microneedling may cause redness and peeling for several days."
+      },
+      {
+        "question": "Can treatments cause initial worsening?",
+        "answer": "Some therapies can cause temporary purging or redness as the skin renews; this is usually short-lived and managed with your provider's guidance."
+      }
+    ]
+  },
+  "Hair Restoration at RESTORE by TXT": {
+    "id": 7,
+    "description": "Hair loss can be caused by many factors—hormones, genetics, stress, inflammation, or even nutrient deficiencies—but the common thread is that the follicles become weakened and less active over time. At RESTORE by TXT, our goal is to reactivate and strengthen your follicles naturally using regenerative medicine.",
+    "types": [
+      {
+        "id": 1,
+        "name": "PRP Injections (Platelet-Rich Plasma)",
+        "description": "Your own platelets are concentrated and injected into the scalp to deliver growth factors directly to the hair follicle. These growth factors improve blood flow, extend the growth phase of the hair cycle, and strengthen thinning strands for thicker, healthier hair over time."
+      },
+      {
+        "id": 2,
+        "name": "Microneedling for the Scalp",
+        "description": "Controlled micro-injuries trigger collagen remodeling and open micro-channels for deeper absorption of regenerative serums—enhancing circulation and follicle stimulation."
+      },
+      {
+        "id": 3,
+        "name": "Microneedling with PRP or PDGF",
+        "description": "Combines the power of microneedling with potent growth factors (from your platelets or bio-engineered PDGF) to supercharge follicle activation and repair damaged scalp tissue."
+      },
+      {
+        "id": 4,
+        "name": "Optional Add-Ons",
+        "description": "Treatments may be paired with LED light therapy, scalp enzyme exfoliation, or vitamin injections to improve scalp health and nutrient delivery."
+      }
+
+    ],
+    "image": "skinImg.jpg",
+    "FAQs": [
+      {
+        "question": "Who is it for?",
+        "answer": "Men and women experiencing hair thinning, shedding, or early-stage hair loss—or anyone wanting to proactively maintain hair density and scalp vitality."
+      },
+      {
+        "question": "How long does it take to see results?",
+        "answer": "Most patients notice decreased shedding and new baby hairs within a few months. For best results, we recommend a series of treatments spaced 4–6 weeks apart, followed by maintenance sessions every few months."
+      },
+      {
+        "question": "Is hair restoration treatment safe?",
+        "answer": "Yes, our treatments are performed by experienced professionals using safe and effective methods."
       }
     ]
   }
+
 }
