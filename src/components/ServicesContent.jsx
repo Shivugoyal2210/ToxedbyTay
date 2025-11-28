@@ -350,14 +350,14 @@ const ServicesContent = () => {
           </div>
         </div>
       </div>
-      <div className="service-container" ref={microneedling} id="microneedling">
+      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0" ref={microneedling} id="microneedling">
         <img
           src={toxImg}
           alt="Microneedling"
-          className="w-full aspect-video object-cover"
+          className="w-full h-auto lg:h-full max-h-[700px] lg:max-h-[600px] object-cover lg:col-start-2"
         />
-        <div className="w-full service-2 fade-in">
-          <div className="services-text-mid w-[90%] mt-10 text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
+        <div className="w-full service-2 fade-in lg:col-start-1 flex flex-col justify-center">
+          <div className="services-text-mid w-[90%] mt-10 text-left overflow-visible mx-auto text-white pt-10 pb-6 px-5 z-10">
             <h1 className="font-apoth mb-7">Microneedling</h1>
             <p className="mb-5">
               {serviceJson["Microneedling"].description}
@@ -369,65 +369,67 @@ const ServicesContent = () => {
               </div>
             ))}
           </div>
-          <a
-            className="block cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20"
-            href="https://toxedbytay.glossgenius.com/"
-            target="_blank"
-          >
-            Book Now
-          </a>
-          <div className="accordion w-[90%] mx-auto">
-            {faq_4.map((item, i) => (
-              <div
-                className="item cursor-pointer"
-                key={i}
-                onClick={() => handleFaq4(i)}
-              >
-                <div className="title">
-                  <h2 className="flex justify-between">
-                    {item.question}{" "}
-                    <svg
-                      className={item.open ? "minus" : "plus"}
-                      viewBox="0 0 100 100"
-                      width="15"
-                    >
-                      <rect
-                        className="horizontal"
-                        width="80"
-                        height="10"
-                        x="10"
-                        y="33"
-                        rx="5"
-                      ></rect>
-                      <rect
-                        className="vertical"
-                        width="10"
-                        height="80"
-                        x="45"
-                        y="0"
-                        rx="5"
-                      ></rect>
-                    </svg>
-                  </h2>
-                </div>
+          <div className="w-[90%] mx-auto">
+            <a
+              className="block cursor-pointer py-8 px-10 text-white text-center bg-black text-lg max-w-xs mx-auto w-2/5 mb-8"
+              href="https://toxedbytay.glossgenius.com/"
+              target="_blank"
+            >
+              Book Now
+            </a>
+            <div className="accordion w-full">
+              {faq_4.map((item, i) => (
                 <div
-                  className={item.open ? "fade-in-text block mt-5" : "hidden"}
+                  className="item cursor-pointer"
+                  key={i}
+                  onClick={() => handleFaq4(i)}
                 >
-                  {item.answer}
+                  <div className="title">
+                    <h2 className="flex justify-between">
+                      {item.question}{" "}
+                      <svg
+                        className={item.open ? "minus" : "plus"}
+                        viewBox="0 0 100 100"
+                        width="15"
+                      >
+                        <rect
+                          className="horizontal"
+                          width="80"
+                          height="10"
+                          x="10"
+                          y="33"
+                          rx="5"
+                        ></rect>
+                        <rect
+                          className="vertical"
+                          width="10"
+                          height="80"
+                          x="45"
+                          y="0"
+                          rx="5"
+                        ></rect>
+                      </svg>
+                    </h2>
+                  </div>
+                  <div
+                    className={item.open ? "fade-in-text block mt-5" : "hidden"}
+                  >
+                    {item.answer}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-      <div className="service-container" ref={acne} id="acne">
+      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0" ref={acne} id="acne">
         <img
           src={skinImg}
           alt="Acne & Acne Scar Treatments"
-          className="w-full aspect-video object-cover"
+          className="w-full h-auto lg:h-full max-h-[700px] lg:max-h-[600px] object-cover lg:col-start-2"
         />
-        <div className="w-full fade-in">
-          <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
+        <div className="w-full fade-in lg:col-start-1 flex flex-col justify-center">
+          <div className="services-text w-[90%] text-left overflow-visible mx-auto text-white pt-10 pb-6 px-5 z-10">
             <h1 className="font-apoth mb-7">Acne & Acne Scar Treatments</h1>
             <p className="mb-5">
               {serviceJson["Acne & Acne Scar Treatments"].description}
@@ -439,65 +441,67 @@ const ServicesContent = () => {
               </div>
             ))}
           </div>
-          <a
-            className="block cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20"
-            href="https://toxedbytay.glossgenius.com/"
-            target="_blank"
-          >
-            Book Now
-          </a>
-          <div className="accordion w-[90%] mx-auto">
-            {faq_5.map((item, i) => (
-              <div
-                className="item cursor-pointer"
-                key={i}
-                onClick={() => handleFaq5(i)}
-              >
-                <div className="title">
-                  <h2 className="flex justify-between">
-                    {item.question}{" "}
-                    <svg
-                      className={item.open ? "minus" : "plus"}
-                      viewBox="0 0 100 100"
-                      width="15"
-                    >
-                      <rect
-                        className="horizontal"
-                        width="80"
-                        height="10"
-                        x="10"
-                        y="33"
-                        rx="5"
-                      ></rect>
-                      <rect
-                        className="vertical"
-                        width="10"
-                        height="80"
-                        x="45"
-                        y="0"
-                        rx="5"
-                      ></rect>
-                    </svg>
-                  </h2>
-                </div>
+          <div className="w-[90%] mx-auto">
+            <a
+              className="block cursor-pointer py-8 px-10 text-white text-center bg-black text-lg max-w-xs mx-auto w-2/5 mb-8"
+              href="https://toxedbytay.glossgenius.com/"
+              target="_blank"
+            >
+              Book Now
+            </a>
+            <div className="accordion w-full">
+              {faq_5.map((item, i) => (
                 <div
-                  className={item.open ? "fade-in-text block mt-5" : "hidden"}
+                  className="item cursor-pointer"
+                  key={i}
+                  onClick={() => handleFaq5(i)}
                 >
-                  {item.answer}
+                  <div className="title">
+                    <h2 className="flex justify-between">
+                      {item.question}{" "}
+                      <svg
+                        className={item.open ? "minus" : "plus"}
+                        viewBox="0 0 100 100"
+                        width="15"
+                      >
+                        <rect
+                          className="horizontal"
+                          width="80"
+                          height="10"
+                          x="10"
+                          y="33"
+                          rx="5"
+                        ></rect>
+                        <rect
+                          className="vertical"
+                          width="10"
+                          height="80"
+                          x="45"
+                          y="0"
+                          rx="5"
+                        ></rect>
+                      </svg>
+                    </h2>
+                  </div>
+                  <div
+                    className={item.open ? "fade-in-text block mt-5" : "hidden"}
+                  >
+                    {item.answer}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-      <div className="service-container" ref={hair} id="hair">
+      <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0" ref={hair} id="hair">
         <img
           src={skinImg}
           alt="Hair Restoration"
-          className="w-full aspect-video object-cover"
+          className="w-full h-auto lg:h-full max-h-[700px] lg:max-h-[600px] object-cover lg:col-start-2"
         />
-        <div className="w-full service-2 fade-in">
-          <div className="services-text-mid w-[90%] mt-10 text-left overflow-visible mx-auto text-white pt-10 pb-20 px-5 z-10">
+        <div className="w-full service-2 fade-in lg:col-start-1 flex flex-col justify-center">
+          <div className="services-text-mid w-[90%] mt-10 text-left overflow-visible mx-auto text-white pt-10 pb-6 px-5 z-10">
             <h1 className="font-apoth mb-7">Hair Restoration at RESTORE by TXT</h1>
             <p className="mb-5">
               {serviceJson["Hair Restoration at RESTORE by TXT"].description}
@@ -509,54 +513,56 @@ const ServicesContent = () => {
               </div>
             ))}
           </div>
-          <a
-            className="block cursor-pointer py-8 px-10 -mt-12 text-white text-center bg-black text-lgmax-w-xs mx-auto w-2/5 mb-20"
-            href="https://toxedbytay.glossgenius.com/"
-            target="_blank"
-          >
-            Book Now
-          </a>
-          <div className="accordion w-[90%] mx-auto">
-            {faq_6.map((item, i) => (
-              <div
-                className="item cursor-pointer"
-                key={i}
-                onClick={() => handleFaq6(i)}
-              >
-                <div className="title">
-                  <h2 className="flex justify-between">
-                    {item.question}{" "}
-                    <svg
-                      className={item.open ? "minus" : "plus"}
-                      viewBox="0 0 100 100"
-                      width="15"
-                    >
-                      <rect
-                        className="horizontal"
-                        width="80"
-                        height="10"
-                        x="10"
-                        y="33"
-                        rx="5"
-                      ></rect>
-                      <rect
-                        className="vertical"
-                        width="10"
-                        height="80"
-                        x="45"
-                        y="0"
-                        rx="5"
-                      ></rect>
-                    </svg>
-                  </h2>
-                </div>
+          <div className="w-[90%] mx-auto">
+            <a
+              className="block cursor-pointer py-8 px-10 text-white text-center bg-black text-lg max-w-xs mx-auto w-2/5 mb-8"
+              href="https://toxedbytay.glossgenius.com/"
+              target="_blank"
+            >
+              Book Now
+            </a>
+            <div className="accordion w-full">
+              {faq_6.map((item, i) => (
                 <div
-                  className={item.open ? "fade-in-text block mt-5" : "hidden"}
+                  className="item cursor-pointer"
+                  key={i}
+                  onClick={() => handleFaq6(i)}
                 >
-                  {item.answer}
+                  <div className="title">
+                    <h2 className="flex justify-between">
+                      {item.question}{" "}
+                      <svg
+                        className={item.open ? "minus" : "plus"}
+                        viewBox="0 0 100 100"
+                        width="15"
+                      >
+                        <rect
+                          className="horizontal"
+                          width="80"
+                          height="10"
+                          x="10"
+                          y="33"
+                          rx="5"
+                        ></rect>
+                        <rect
+                          className="vertical"
+                          width="10"
+                          height="80"
+                          x="45"
+                          y="0"
+                          rx="5"
+                        ></rect>
+                      </svg>
+                    </h2>
+                  </div>
+                  <div
+                    className={item.open ? "fade-in-text block mt-5" : "hidden"}
+                  >
+                    {item.answer}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
