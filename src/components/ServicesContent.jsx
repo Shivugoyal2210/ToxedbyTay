@@ -104,6 +104,7 @@ const ServicesContent = () => {
   const acne = useRef(null);
   const hair = useRef(null);
 
+  
   const scrollToSection = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,
