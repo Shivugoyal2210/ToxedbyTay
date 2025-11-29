@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { skinImg, toxImg, fillerImg } from "../assets/images";
+import { skinImg, toxImg, fillerImg, microneedleImg, acneImg, hairImg } from "../assets/images";
 import serviceJson from "../assets/images/Services/serviceData.json";
 import { ListItem } from "@mui/material";
 import { useRef } from "react";
@@ -104,10 +104,13 @@ const ServicesContent = () => {
   const acne = useRef(null);
   const hair = useRef(null);
 
-  const imagesMap = {
-    toxImg,
-    fillerImg,
-    skinImg,
+  const imageMapByFilename = {
+    "toxImg.jpg": toxImg,
+    "fillerImg.jpg": fillerImg,
+    "skinImg.jpg": skinImg,
+    "microneedleImg.jpeg": microneedleImg,
+    "acneImg.jpeg": acneImg,
+    "hairImg.jpeg": hairImg,
   };
 
   
@@ -166,7 +169,7 @@ const ServicesContent = () => {
       </div>
       <div className="service-container mt-5" ref={neuro} id="neuro">
         <img
-          src={imagesMap[serviceJson["Neuromodulators (Tox)"].image] || toxImg}
+          src={imageMapByFilename[serviceJson["Neuromodulators (Tox)"].image] || toxImg}
           alt="Neuromodulators"
           className="w-full aspect-video object-cover"
         />
@@ -232,7 +235,7 @@ const ServicesContent = () => {
       </div>
       <div className="service-container" ref={fillers} id="fillers">
         <img
-          src={imagesMap[serviceJson["Filler — Restore, Refine, Rebalance"].image] || fillerImg}
+          src={imageMapByFilename[serviceJson["Filler — Restore, Refine, Rebalance"].image] || fillerImg}
           alt="Fillers"
           className="w-full aspect-video object-cover"
         />
@@ -296,7 +299,7 @@ const ServicesContent = () => {
       </div>
       <div className="service-container" ref={advaTx} id="advaTx">
         <img
-          src={imagesMap[serviceJson["ADVATx Laser — The Ultimate Skin Perfecting Laser"].image] || skinImg}
+          src={imageMapByFilename[serviceJson["ADVATx Laser — The Ultimate Skin Perfecting Laser"].image] || skinImg}
           alt="ADVATx Laser"
           className="w-full aspect-video object-cover"
         />
@@ -360,7 +363,7 @@ const ServicesContent = () => {
       </div>
       <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0 min-h-[520px] lg:min-h-[600px]" ref={microneedling} id="microneedling">
         <img
-          src={imagesMap[serviceJson["Microneedling"].image] || toxImg}
+          src={imageMapByFilename[serviceJson["Microneedling"].image] || microneedleImg}
           alt="Microneedling"
           className="w-full h-auto lg:h-full max-h-[700px] lg:max-h-[600px] object-cover lg:col-start-2"
         />
@@ -432,7 +435,7 @@ const ServicesContent = () => {
       </div>
       <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0 min-h-[520px] lg:min-h-[600px]" ref={acne} id="acne">
         <img
-          src={imagesMap[serviceJson["Acne & Acne Scar Treatments"].image] || skinImg}
+          src={imageMapByFilename[serviceJson["Acne & Acne Scar Treatments"].image] || acneImg}
           alt="Acne & Acne Scar Treatments"
           className="w-full h-auto lg:h-full max-h-[700px] lg:max-h-[600px] object-cover lg:col-start-2"
         />
@@ -504,7 +507,7 @@ const ServicesContent = () => {
       </div>
       <div className="service-container lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-0 min-h-[520px] lg:min-h-[600px]" ref={hair} id="hair">
         <img
-          src={imagesMap[serviceJson["Hair Restoration at RESTORE by TXT"].image] || skinImg}
+          src={imageMapByFilename[serviceJson["Hair Restoration at RESTORE by TXT"].image] || hairImg}
           alt="Hair Restoration"
           className="w-full h-auto lg:h-full max-h-[700px] lg:max-h-[600px] object-cover lg:col-start-2"
         />

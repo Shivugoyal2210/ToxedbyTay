@@ -20,6 +20,9 @@ import toxImg from "./Services/toxImg.jpg";
 import fillerImg from "./Services/fillerImg.jpg";
 import skinImg from "./Services/skinImg.jpg";
 import aboutMe from "./aboutMe.png";
+import microneedleImg from "./Services/microneedleImg.jpeg";
+import acneImg from "./Services/acneImg.jpeg";
+import hairImg from "./Services/hairImg.jpeg";
 
 export {
   mainLanding,
@@ -43,4 +46,7 @@ export {
   toxImg,
   fillerImg,
   aboutMe,
+  microneedleImg,
+  acneImg,
+  hairImg,
 };
