@@ -96,7 +96,7 @@
         "description": "Derived from salmon DNA, it promotes cell renewal and tissue repair for firmer, more resilient skin."
       }
   ],
-    "image": "toxImg.jpg",
+    "image": "microneedlingImg.jpeg",
     "FAQs": [
       {
         "question": "What is Microneedling?",
@@ -142,7 +142,7 @@
         "description": "A medical-grade chemical peel that targets acne, pigment, and texture. It lifts discoloration, purifies pores, and reveals smoother, clearer skin within a week."
       }
     ],
-    "image": "skinImg.jpg",
+    "image": "acneImg.jepg",
     "FAQs": [
       {
         "question": "Is this for active acne or scars?",
@@ -188,7 +188,7 @@
       }
 
     ],
-    "image": "skinImg.jpg",
+    "image": "hairImg.jpeg",
     "FAQs": [
       {
         "question": "Who is it for?",
