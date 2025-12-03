@@ -2,9 +2,9 @@ import React from "react";
 import serviceJson from "../assets/images/Services/serviceData.json";
 import { useState } from "react";
 const Faq = () => {
-  const faq1 = serviceJson["Tox & Neuromodulators"].FAQs;
-  const faq2 = serviceJson["Fillers"].FAQs;
-  const faq3 = serviceJson["Skin Tightening"].FAQs;
+  const faq1 = serviceJson["Neuromodulators (Tox)"].FAQs;
+  const faq2 = serviceJson["Filler — Restore, Refine, Rebalance"].FAQs;
+  const faq3 = serviceJson["Acne & Acne Scar Treatments"].FAQs;
   faq1.forEach((item) => (item.open = false));
   faq2.forEach((item) => (item.open = false));
   faq3.forEach((item) => (item.open = false));
@@ -132,7 +132,7 @@ const Faq = () => {
       </div>
 
       <h1 className="font-apoth2 tracking-widest mb-7 w-[80%] mx-auto mt-[5rem]">
-        SKIN TIGHTENING
+        ACNE AND SCAR TREATMENTS
       </h1>
       <div className="accordion w-[80%] mx-auto text-base">
         {faq_3.map((item, i) => (
